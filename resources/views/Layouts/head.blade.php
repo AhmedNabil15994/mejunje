@@ -457,6 +457,7 @@
     .rest table tr.tr td button.btn-xs{
         border: 0;
         padding: 5px 25px;
+        outline: 0;
         border-radius: 25px;
         font-size: 16px !important;
         width: 120px;
