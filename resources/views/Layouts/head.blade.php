@@ -86,13 +86,13 @@
         color: #999;
     }
     .list-group a.active{
-        color: #F14441;
+        color: #db5143;
         text-decoration: none;
     }
     .list-group .li-wrapper.active span.pull-left{
-        border: 1px solid #F14441;
+        border: 1px solid #db5143;
         color: #FFF;
-        background-color: #F14441;
+        background-color: #db5143;
         border-top-right-radius: 50%;
         border-bottom-right-radius: 50%;
         box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);
@@ -110,8 +110,8 @@
         height: 500px;
         width: calc(100% - 30px);
         position: absolute;
-        /*border: 1px solid #F14441;*/
-        /*background-color: #F14441;
+        /*border: 1px solid #db5143;*/
+        /*background-color: #db5143;
         border-bottom-left-radius: 35%;*/
         /*box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);*/
     }
@@ -121,15 +121,15 @@
         height: 100%;
     }
     #header .col-md-6:first-of-type{
-        background-color: #F14441;
+        background-color: #db5143;
         border-bottom-left-radius: 30%;
         box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);
-        background-image: linear-gradient(to right, #F14441 , #F95F55);
+        background-image: linear-gradient(to right, #db5143 , #F95F55);
     }
     #header .col-md-6:last-of-type{
-        background-color: #F14441;
+        background-color: #db5143;
         box-shadow: 0 1px 0.1rem rgba(0, 0, 0, 0.05);
-        background-image: linear-gradient(to right, #F95F55 , #F14441);
+        background-image: linear-gradient(to right, #F95F55 , #db5143);
     }
     #header .col-md-6 .welcome{
         padding: 60px;
@@ -417,8 +417,8 @@
         padding-left: 0;
     }
     .rest tr td button.btn-default.view{
-        background: #F14441;
-        border-color: #F14441;
+        background: #db5143;
+        border-color: #db5143;
         margin-top: -2px;
     }
     .rest table tr.tr:hover button.btn-default.view{
@@ -441,7 +441,7 @@
         font-size: 12px;
     }
     .rest table tr.tr:hover td p i{
-        color: #F14441;
+        color: #db5143;
     }
     .rest table tr.tr td img{
         width: 35px;
@@ -505,11 +505,36 @@
         border: 0;
     }
     .rest-profile .has-search .form-control:focus{
-        color: #F14441;
-        border: 1px solid #F14441;
+        color: #db5143;
+        border: 1px solid #db5143;
     }
     .rest-profile .has-search .form-control:focus::placeholder{
-        color: #F14441;
+        color: #db5143;
+    }
+    .rest-profile .form-group .col-xs-4{
+        padding: 7px 5px;
+        font-size: 18px;
+    }
+    .rest-profile .form-group .col-xs-8{
+        padding: 0;
+    }
+    .rest-profile .form-group .col-xs-8 input{
+        border: 0;
+        background-color: #FFF;
+    }
+    .label-2{
+        font-weight: 400;
+        font-size: 16px !important;
+        color: #777;
+    }
+    p.stars{
+        margin-bottom: 0 !important;
+        color: #333;
+        font-weight: bold !important;
+        font-size: 18px !important;
+    }
+    p.stars i{
+        color: #FFCB2E;
     }
     #data div.chart.rest{
         min-height: 250px !important;
@@ -560,8 +585,8 @@
         outline: 0;
     }
     .custom-control-input:checked~.custom-control-label::before{
-        background-color: #F14441;
-        border-color: #F14441;
+        background-color: #db5143;
+        border-color: #db5143;
         outline: 0;
     }
     .custom-control-inline:last-of-type{
@@ -574,13 +599,13 @@
         font-size: 16px;
     }
     .label-primary{
-        color: #2e6da4;
+        color: #2e6da4 !important;
     }
     .label-success{
-        color: #41C719;
+        color: #41C719 !important;
     }
     .label-danger{
-        color: #F64000;
+        color: #F64000 !important;
     }
 /*-----------------------------------------------------------------------------------------------------*/
 
@@ -731,13 +756,79 @@
     .more-info .col-md-6:first-of-type label{
         margin-bottom: 40px;
     }
-    .more-info label i{
-        color: #F14441;
+    .more-info label i,
+    h4 i{
+        color: #db5143;
         font-size: 20px;
         margin-right: 5px;
     }
+    h4 i{
+        font-size: 24px;
+    }
+    p.dish-desc{
+        margin-bottom: 0 !important;
+    }
+    p.dish-desc i{
+        color: #db5143;
+        margin-right: 5px;
+    }
+    p.desc.dish-desc{
+        margin-bottom: 5px !important;
+    }
+    .last p.stars{
+        margin-top: 5px;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        padding-left: 5px;
+    }
+    .chart-menu .order-details h5{
+        margin-bottom: 0 !important;
+    }
     .more-info .pd-l-30 label{
         font-weight: 400;
+    }
+    .cust-resets{
+        margin-top: 0;
+    }
+    .pd-b-0{
+        padding-bottom: 0 !important;
+    }
+    .mg-t-20{
+        margin-top: 20px;
+    }
+    .mg-t-10{
+        margin-top: 10px;
+    }
+    .reset-data span:first-of-type{
+        margin-right: 0 !important;
+    }
+    .reset-data .chart-chart.chart-chart3{
+        padding-left: 25px;
+        padding-top: 40px;
+    }
+    .reset-chart canvas#myChart{
+        height: 225px !important;
+    }
+    .rest-prof img{
+        margin: unset !important;
+        display: inline-block !important;
+        margin-top: 20px !important;
+    }
+    .rest-prof h5{
+        font-size: 19px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .rest-prof p.desc{
+        color: #999;
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .pd-b-5{
+        padding-bottom: 5px !important;
     }
     .edit-my-data button{
         width: 80%;
@@ -746,7 +837,7 @@
         margin-top: 30px;
         border: 1px solid #DDD;
         color: #FFF;
-        background-color: #F14441;
+        background-color: #db5143;
         padding: 15px;
         font-size: 18px;
         border-radius: 50px;
@@ -785,7 +876,13 @@
     .chart-data.cust-profile2 .col-xs-12:last-of-type div.form-group{
         margin-bottom: 0;
     }
-
+    div.chart-menu{
+        display: block;
+        height: 100%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding: 20px;
+    }
 /*-----------------------------------------------------------------------------------------------------*/
     .food-types{
         padding-bottom: 0 !important;
@@ -847,7 +944,7 @@
     }
     .food_types2 .swiper-slide.swiper-slide-active,
     .food_types2 .swiper-slide:hover{
-        background-color: #F14441;
+        background-color: #db5143;
     }
     .swiper-button-next,
     .swiper-button-prev{
@@ -870,7 +967,7 @@
         margin-top: 7px;
         height: 45%;
         border-radius: 50%;
-        border: 1px solid #F14441;
+        border: 1px solid #db5143;
     }
     .food_types2 .swiper-slide p{
         /*margin-top: 10px;*/
@@ -948,7 +1045,7 @@
         border-radius: 15px !important;
     }
     .notif .dot{
-        background-color: #F14441;
+        background-color: #db5143;
         height: 16px;
         width: 16px;
         border-radius: 50%;
@@ -995,6 +1092,10 @@
         padding-top: 10px;
         color: #555;
         font-weight: bold;
+        width: 100%;
+    }
+    .row .yest .row{
+        width: 100%;
     }
     .row .yest .notif{
         box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.15) !important;
@@ -1018,7 +1119,7 @@
         color: #999;
     }
     .paginatior .col-xs-6:last-of-type i{
-        color: #F14441;
+        color: #db5143;
     }
     .paginatior .col-xs-6 i{
         font-size: 28px;

@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-md-10">
                     <div class="chart-data">
-                        <span>A)</span> <span>My Income Report &nbsp;&nbsp;(100%)</span>
+                        <span>B)</span> <span>My Income Report &nbsp;&nbsp;(100%)</span>
                     </div>
                     <div class="chart-chart">
                         <canvas id="myChart" width="300" height="220"></canvas>

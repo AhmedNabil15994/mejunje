@@ -45,9 +45,9 @@
                                             <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
                                             <span>Restaurant 1</span>
                                         </td>
-                                        <td>rest1@admin.com</td>
                                         <td>12012301230</td>
-                                        <td>Yes</td>
+                                        <td>rest1@admin.com</td>
+                                        <td>rest1@paypal.com</td>
                                         <td>10</td>
                                         <td>20</td>
                                         <td>01/7/2020</td>
@@ -64,9 +64,9 @@
                                             <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
                                             <span>Restaurant 2</span>
                                         </td>
-                                        <td>rest2@admin.com</td>
                                         <td>12012301230</td>
-                                        <td>No</td>
+                                        <td>rest2@admin.com</td>
+                                        <td>rest2@paypal.com</td>
                                         <td>100</td>
                                         <td>200</td>
                                         <td>01/7/2018</td>

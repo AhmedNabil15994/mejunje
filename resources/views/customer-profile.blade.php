@@ -151,61 +151,63 @@
 <div class="row yest">
     <div class="col-md-1"></div>
     <div class="col-md-11">
-        <div class="col-xs-12 yester_row">
-            <h4>Orders</h4>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="cust-order">
-                        <div class="col-md-6 col-xs-12">
-                            <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                        </div>
-                        <div class="col-md-6 col-xs-12 order-details">
-                            <h5>Bagal Story</h5>
-                            <p class="desc">Burger number ###43344</p>
-                            <p class="date">01/07/2020</p>
-                            <p><label class="btn btn-xs btn-primary">In Progress</label></p>
-                            <div class="row last">
-                                <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
-                                <div class="col-xs-3 text-right">$3.21</div>
+        <div class="chart chart-menu">
+            <div class="row yester_row">
+                <h4><i class="fa fa-receipt"></i> Orders</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="cust-order">
+                            <div class="col-md-6 col-xs-12">
+                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
+                            </div>
+                            <div class="col-md-6 col-xs-12 order-details">
+                                <h5>Bagal Story</h5>
+                                <p class="desc">Burger number ###43344</p>
+                                <p class="date">01/07/2020</p>
+                                <p><label class="btn btn-xs btn-primary">In Progress</label></p>
+                                <div class="row last">
+                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
+                                    <div class="col-xs-3 text-right">$3.21</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cust-order">
-                        <div class="col-md-6 col-xs-12">
-                            <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                        </div>
-                        <div class="col-md-6 col-xs-12 order-details">
-                            <h5>Bagal Story</h5>
-                            <p class="desc">Burger number ###43344</p>
-                            <p class="date">01/07/2020</p>
-                            <p><label class="btn btn-xs btn-success">Active</label></p>
-                            <div class="row last">
-                                <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
-                                <div class="col-xs-3 text-right">$3.21</div>
+                    <div class="col-md-4">
+                        <div class="cust-order">
+                            <div class="col-md-6 col-xs-12">
+                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
+                            </div>
+                            <div class="col-md-6 col-xs-12 order-details">
+                                <h5>Bagal Story</h5>
+                                <p class="desc">Burger number ###43344</p>
+                                <p class="date">01/07/2020</p>
+                                <p><label class="btn btn-xs btn-success">Active</label></p>
+                                <div class="row last">
+                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
+                                    <div class="col-xs-3 text-right">$3.21</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cust-order">
-                        <div class="col-md-6 col-xs-12">
-                            <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                        </div>
-                        <div class="col-md-6 col-xs-12 order-details">
-                            <h5>Bagal Story</h5>
-                            <p class="desc">Burger number ###43344</p>
-                            <p class="date">01/07/2020</p>
-                            <p><label class="btn btn-xs btn-danger">Cancel</label></p>
-                            <div class="row last">
-                                <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
-                                <div class="col-xs-3 text-right">$3.21</div>
+                    <div class="col-md-4">
+                        <div class="cust-order">
+                            <div class="col-md-6 col-xs-12">
+                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
+                            </div>
+                            <div class="col-md-6 col-xs-12 order-details">
+                                <h5>Bagal Story</h5>
+                                <p class="desc">Burger number ###43344</p>
+                                <p class="date">01/07/2020</p>
+                                <p><label class="btn btn-xs btn-danger">Cancel</label></p>
+                                <div class="row last">
+                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
+                                    <div class="col-xs-3 text-right">$3.21</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>   
+                </div>   
+            </div>
         </div>
     </div>
 </div>
