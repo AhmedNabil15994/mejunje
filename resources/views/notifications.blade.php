@@ -49,7 +49,7 @@
 <div class="row yest">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-        <div class="col-xs-12">
+        <div class="col-xs-12 yester_row">
             <h4>Yesterday</h4>
             <div class="chart chart6 notif">
             <div class="row notif_row">

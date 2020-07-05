@@ -927,6 +927,9 @@
     #data div.chart2.chart3 .chart-data span:first-of-type{
         margin-right: 0 !important;
     }
+    .yester_row{
+        padding: 0 !important;
+    }
     /******************************* Bootstrap 3*******************************/
     #header .row .col-md-6{
         height: 100%;
