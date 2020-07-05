@@ -58,7 +58,7 @@
                             <div class="col-xs-12 pd-l-0">
                                 <div class="form-group">
                                     <div class="col-xs-4">
-                                        <label>Monthly Sales</label>
+                                        <label>Paid This Month</label>
                                     </div>
                                     <div class="col-xs-8">
                                         <div class="form-group has-search">
