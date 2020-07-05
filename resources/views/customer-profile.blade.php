@@ -7,7 +7,7 @@
 
 <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-4">
+    <div class="col-md-5">
         <div class="chart">
             <div class="row">
                 <div class="col-md-12">
@@ -19,17 +19,65 @@
                             <hr>
                         </div>
                         <div class="row more-info">
-                            <div class="col-md-6">
-                                <label><i class="fa fa-map-marker-alt"></i> From</label>
+                            <div class="col-xs-12 pd-l-0">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="form-group has-search">
+                                            <input type="text" class="form-control" disabled placeholder="admin@admin.com">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6 pd-l-30">
-                                <label>Cairo</label>
+                            <div class="col-xs-12 pd-l-0">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>Address</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="form-group has-search">
+                                            <input type="text" class="form-control" disabled placeholder="Cairo">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <label><i class="fa fa-user"></i> Member Since</label>
+                            <div class="col-xs-12 pd-l-0">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>Login Type</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="form-group has-search">
+                                            <input type="text" class="form-control" disabled placeholder="Facebook">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6 pd-l-30">
-                                <label>May 2020</label>
+                            <div class="col-xs-12 pd-l-0">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>Monthly Sales</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="form-group has-search">
+                                            <input type="text" class="form-control" disabled placeholder="20">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 pd-l-0">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label># Orders This Month</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="form-group has-search">
+                                            <input type="text" class="form-control" disabled placeholder="50">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row edit-my-data">
@@ -41,49 +89,123 @@
         </div>
     </div>
     <div class="col-md-5">
-        <div class="chart">
+        <div class="chart cust-profile">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="chart-data cust-profile2">
-                        <h3>Profile Information</h3>
-                        <p>Get the best recommendation for your need.<br>This information is public</p>
-                        <div class="row">
-                            <div class="col-xs-12 pd-l-0">
-                                <div class="form-group">
-                                    <label>What is your area of major?</label>
-                                    <div class="form-group has-search">
-                                        <input type="text" class="form-control" disabled placeholder="Food">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 pd-l-0">
-                                <div class="form-group">
-                                    <label>What is your Food title?</label>
-                                    <div class="form-group has-search">
-                                        <input type="text" class="form-control" disabled placeholder="Fast Food">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 pd-l-0">
-                                <div class="form-group">
-                                    <label>Biography</label>
-                                    <div class="form-group has-search">
-                                        <input type="text" class="form-control" disabled placeholder="upload here">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 pd-l-0">
-                                <div class="form-group">
-                                    <label>Which industry does the workplace/business belong to?</label>
-                                    <div class="form-group has-search">
-                                        <input type="text" class="form-control" disabled placeholder="ex: Restaurant">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-md-10">
+                    <div class="chart-data">
+                        <span>A)</span> <span>My Sales Report &nbsp;&nbsp;</span>
+                    </div>
+                    <div class="chart-chart">
+                        <canvas id="myChart" width="300" height="220"></canvas>
+                    </div>
+                </div>        
+                <div class="col-md-2">
+                    <div class="actions">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-h"></i>
+                          </button>
+                          <div class="menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Week</a>
+                            <a class="dropdown-item" href="#">Month</a>
+                            <a class="dropdown-item" href="#">Year</a>
+                          </div>
+                        </div>    
                     </div>
                 </div>        
             </div>
+        </div>
+         <div class="chart2 customer">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="chart-data">
+                        <span>Complete Orders</span>
+                        <div class="chart-chart chart-chart3">
+                            <canvas id="kt_chart_quick_stats_3" width="50" height="25"></canvas>
+                        </div>
+                        <p class="rate first"><i class="fa fa-arrow-up"></i> 20</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="chart-data">
+                        <span>Cancel Orders</span>
+                        <div class="chart-chart chart-chart3">
+                            <canvas id="kt_chart_quick_stats_4" width="50" height="25"></canvas>
+                        </div>
+                        <p class="rate second"><i class="fa fa-arrow-down"></i> 10</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="chart-data">
+                        <span>New Orders</span>
+                        <div class="chart-chart chart-chart3">
+                            <canvas id="kt_chart_quick_stats_5" width="50" height="25"></canvas>
+                        </div>
+                        <p class="rate third"><i class="fa fa-arrow-up"></i> 20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row yest">
+    <div class="col-md-1"></div>
+    <div class="col-md-11">
+        <div class="col-xs-12 yester_row">
+            <h4>Orders</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="cust-order">
+                        <div class="col-md-6 col-xs-12">
+                            <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
+                        </div>
+                        <div class="col-md-6 col-xs-12 order-details">
+                            <h5>Bagal Story</h5>
+                            <p class="desc">Burger number ###43344</p>
+                            <p class="date">01/07/2020</p>
+                            <p><label class="btn btn-xs btn-primary">In Progress</label></p>
+                            <div class="row last">
+                                <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
+                                <div class="col-xs-3 text-right">$3.21</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cust-order">
+                        <div class="col-md-6 col-xs-12">
+                            <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
+                        </div>
+                        <div class="col-md-6 col-xs-12 order-details">
+                            <h5>Bagal Story</h5>
+                            <p class="desc">Burger number ###43344</p>
+                            <p class="date">01/07/2020</p>
+                            <p><label class="btn btn-xs btn-success">Active</label></p>
+                            <div class="row last">
+                                <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
+                                <div class="col-xs-3 text-right">$3.21</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cust-order">
+                        <div class="col-md-6 col-xs-12">
+                            <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
+                        </div>
+                        <div class="col-md-6 col-xs-12 order-details">
+                            <h5>Bagal Story</h5>
+                            <p class="desc">Burger number ###43344</p>
+                            <p class="date">01/07/2020</p>
+                            <p><label class="btn btn-xs btn-danger">Cancel</label></p>
+                            <div class="row last">
+                                <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
+                                <div class="col-xs-3 text-right">$3.21</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
         </div>
     </div>
 </div>
