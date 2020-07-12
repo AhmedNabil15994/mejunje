@@ -530,4 +530,10 @@
 	.calendar{
 		top: -40px;
 	}
+	#header .col-md-6 .welcome{
+		padding-right: 0;
+	}
+	#header .col-md-6 .welcome h2{
+		font-size: 35px;
+	}
 }
