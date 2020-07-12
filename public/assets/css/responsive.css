@@ -246,6 +246,60 @@
 	.food-types .row .col-md-6{
 		margin-left: -15px;
 	}
+	.home{
+		height: unset;
+		min-height: 650px;
+	}
+	.home .navbar-brand{
+		padding-left: 0;
+	}
+	.home .navbar-toggler{
+		float: right;
+		margin-top: 15px;
+	}
+	.home .background{
+		display: none;
+	}
+	.home .background2{
+		width: 100%;
+		min-height: 650px;
+		top: 0;
+		left: 0;
+		transform: unset;
+		border-radius: 0;
+	}
+	.home div.details{
+		top: 150px;
+	}
+	.home div.details button,
+	.download button{
+		margin-bottom: 15px;
+	}
+	.home div.details .container .col-md-6:last-of-type{
+		display: none;
+	}
+	.features{
+		margin-top: 25px;
+	}
+	.features .container .first-col{
+		float: right;
+	}
+	.features .container .last-col{
+		float: left;
+	}
+	.row.download,
+	footer .container .row{
+		padding: 0 15px;
+	}
+	p.designed{
+		text-align: center;
+	}
+	footer p.first.head{
+		margin-bottom: 0;
+	}
+	.features .container .first-col{
+		float: right;
+	}
 }
 
 @media(min-width: 768px ) and ( max-width: 1199px){
@@ -471,6 +525,51 @@
 	}
 	.last p.stars{
 		font-size: 14px !important;
+	}
+
+	.home{
+		min-height: 600px;
+    	max-height: 720px;	
+	}
+	.home .navbar-toggler{
+		display: none;
+	}
+	.home .navbar-nav{
+		display: block;
+		width: 100%;
+	}
+	.home .navbar-nav .nav-link{
+		font-size: 15px !important;
+		margin-right: 9px !important;
+	}
+	.home div.details{
+		top: 150px;
+	}
+	.home div.details .container .col-md-6{
+		float: left;
+	}
+	.home div.details .container img{
+		min-height: unset;
+		margin-top: 0;
+	}
+	.home div.details button{
+		padding: 10px;
+	}
+	.features .container .last-col,
+	.features .container .first-col{
+		max-width: 100%;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	.row.download{
+		display: block;
+		text-align: center;
+	}
+	.blog{
+		margin-top: 50px;
+	}
+	footer .last-row .col-sm-6.text-right{
+		padding: 0;
 	}
 }
 

@@ -18,7 +18,6 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-  
 
 	var revenueChange = function() {
         if ($('#kt_chart_revenue_change').length == 0) {
@@ -249,5 +248,38 @@
             el: '.swiper-scrollbar',
           },
         });
+
+        $('.nav-link').on('click',function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            if($(window).width() >= 1200){
+                if($(this).hasClass('first-li')){
+                  $('html, body').animate({
+                      scrollTop: 0    
+                  }, 800, 'linear');
+                }else{
+                  $('html, body').animate({
+                    scrollTop: $('#' + $(this).data('animate')).offset().top - 250  
+                  }, 800, 'linear');
+                }
+            }
+        });
+
+        $(window).on('scroll',function(){
+            if($(this).scrollTop() == 0){
+                $('.navbar').removeClass('scrolled'); 
+            }else{
+                $('.navbar').addClass('scrolled');
+            }
+        });
+
+        $(window).on('load',function(){
+            if($(window).width() <= 991){
+                var myString = $('#features .container .first-col').clone();
+                console.log(myString);
+                $('#features .container .first-col').remove();
+                $('#features .container').append(myString);
+            }
+        });
+
 	});
 </script>

@@ -64,7 +64,7 @@
     .navbar-expand-lg{
         display: none;
         margin-bottom: 0;
-        background-color: #db5143 !important;
+        background-color: #db5143;
         border-bottom: 0 !important;
     }
     #menu-toggle{
@@ -1265,6 +1265,287 @@
     .order-det .more-info .cust-order{
         border:0;
         box-shadow: unset;
+    }
+    /******************************* Home ******************************************/
+    .home{
+        height: 100vh;
+        overflow-x: hidden;
+        position: relative;
+    }
+    .home .background2{
+        position: absolute;
+        min-height: 1500px;
+        right: 0;
+        min-width: 1500px;
+        background-image: linear-gradient(to bottom, #db5143 , #FE4B36);
+        border-radius: 200px;
+        transform: rotateZ(-20deg);
+        top: -950px;
+        left: -150px;
+        z-index: 2;
+    }
+    .home .background{
+        position: absolute;
+        min-height: 1500px;
+        left: 0;
+        min-width: 1500px;
+        background-image: linear-gradient(to bottom, #fff , #FFE2D8);
+        border-radius: 200px;
+        transform: rotateZ(20deg);
+        top: -950px;
+        right: -150px;
+        z-index: 1;
+    }
+    .home .navbar{
+        z-index: 55;
+        display: block;
+        background-color: transparent;
+    }
+    .home .navbar.scrolled{
+        background-color: #EF4D3C;
+    }
+    .home .navbar-brand{
+        height: auto;
+    }
+    .home .navbar-brand img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);
+        display: block;
+        margin-right: calc( 100% - 50px);
+    }
+    .home .navbar a.nav-link{
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+    }
+    .home div.details{
+        display: block;
+        position: absolute;
+        top: 250px;
+        left: 0;
+        width: 100%;
+        z-index: 4;
+        min-height: 600px
+    }
+    .home div.details h1{
+        color: #FFF;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    .home div.details p{
+        color: #FFF;
+        margin-bottom: 40px;
+    }
+    .home div.details button{
+        padding: 15px 20px;
+        margin-right: 25px;
+        border:0;
+        outline: 0;
+        box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);
+        transition:  all ease-in-out .25s;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    .home div.details button:first-of-type{
+        background-color: #FFF;
+        color: #FE4B36;
+    }
+    .home div.details button:last-of-type{
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #FFF;
+    }
+    .home div.details button:first-of-type:hover{
+        background-color: #FE4B36;
+        color: #fff;
+    }
+    .home div.details button:last-of-type:hover{
+        color: #FE4B36;
+        background-color: #fff;
+        border: 1px solid #FE4B36;
+    }
+    .home div.details .container .col-md-6:last-of-type{
+        padding: 0;
+    }
+    .home div.details .container img{
+        min-height: 600px;
+        margin-top: -100px;
+        box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);
+    }
+    .features{
+        margin-bottom: 50px;
+    }
+    .blog{
+        margin-top: 150px;
+    }
+    .features .container .first-col{
+        padding-left: 0;
+    }
+    .features .container .first-col img{
+        max-height: 500px;
+        box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);
+    }
+    .features .container .last-col{
+        text-align: left;
+    }
+    .features .container .last-col h1{
+        font-weight: bold;
+        color: #000;
+    }
+    .features .container .last-col p{
+        color: #777;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .icon-holder{
+        width: 50px;
+        margin-right: 10px;
+        float: left;
+    }
+    .icon-holder i{
+        font-size: 38px;
+        color: #777;
+    }
+    .icon-data{
+        width: calc(100% - 60px);
+        float: left;
+    }
+    .icon-data h3{
+        font-size: 18px;
+        margin-bottom: 0;
+        font-weight: bold;
+        color: #495057;
+    }
+    .icon-data p{
+        color: #777;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        margin-top: 5px;
+    }
+    .last-col .main-p{
+        margin-bottom: 50px;
+    }
+    .download button{
+        padding: 15px 20px;
+        margin-right: 25px;
+        border:0;
+        outline: 0;
+        box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);
+        transition:  all ease-in-out .25s;
+        border-radius: 5px;
+        background: #FFF;
+    }
+    .download button i{
+        font-size: 30px;
+        display: block;
+        float: left;
+        margin-top: 7px;
+        margin-right: 10px;
+        color: #FE4B36;
+    }
+    .download button div.button-data{
+        display: block;
+        float: left;
+    }
+    .download button div.button-data b{
+        font-weight: 400 !important;
+        display: block;
+        color: #777;
+        font-size: 13px;
+    }
+    .download button div.button-data span{
+        display: block;
+        margin-top: -5px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .download button:first-of-type{
+        color: #FFF !important;
+        background-color: #FE4B36;
+    }
+    .download button:first-of-type i{
+        color: #FFF;
+    }
+    .download button:first-of-type b{
+        color: #FFF !important;
+    }
+    .download button:first-of-type:hover{
+        background-color: #FFF;
+    }
+    .download button:first-of-type:hover b{
+        color: #777 !important;
+    }
+    .download button:first-of-type:hover i{
+        color: #FE4B36;
+    }
+    .download button:first-of-type:hover span{
+        color: #000;
+    }
+    .download button:not(:first-of-type):hover{
+        background-color: #FE4B36 !important;
+    }
+    .download button:not(:first-of-type):hover b,
+    .download button:not(:first-of-type):hover i,
+    .download button:not(:first-of-type):hover span{
+        color: #FFF !important;
+    }
+    footer{
+        padding: 70px 0;
+        padding-bottom: 15px;
+        min-height: 400px;
+        background-image: linear-gradient(#000F33 0%,#0A193C 50%,#0A193C 75%,#000F33 100%);
+    }
+    footer img{
+        width: 75px;
+        height: 75px;
+        margin-bottom: 5px;
+        border-radius: 50%;
+        box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);
+        display: inline-block;
+        margin-right: 20px;
+    }
+    footer p.first{
+        display: inline-block;
+        color: #FFF;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    footer p.first.head{
+        margin-top: 15px
+    }
+    footer p.last-one,
+    footer p.designed{
+        color: #777;
+    }
+    footer p.last-one a{
+        color: inherit;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    footer p.last-one a:hover{
+        color: #FFF;
+    }
+    footer .row.last-row{
+        margin-top: 40px;
+    }
+    footer .row.last-row .footer-icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-block;
+        float: right;
+        padding: 5px;
+        cursor: pointer;
+    }
+    footer .row.last-row .footer-icon i{
+        font-size: 26px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #CCC;
     }
     /******************************* Bootstrap 3*******************************/
     #header .row .col-md-6{
