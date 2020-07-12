@@ -261,6 +261,16 @@
                     scrollTop: $('#' + $(this).data('animate')).offset().top - 250  
                   }, 800, 'linear');
                 }
+            }else{
+                if($(this).hasClass('first-li')){
+                  $('html, body').animate({
+                      scrollTop: 0    
+                  }, 800, 'linear');
+                }else{
+                  $('html, body').animate({
+                    scrollTop: $('#' + $(this).data('animate')).offset().top - 150  
+                  }, 800, 'linear');
+                }
             }
         });
 
