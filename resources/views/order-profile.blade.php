@@ -226,7 +226,7 @@
                                 <p class="date dish-desc"><i class="fa fa-envelope"></i> steven@hotmail.com</p>
                                 <p class="date dish-desc"><i class="fa fa-phone"></i> 0134567876</p>
                                 <p class="date dish-desc"><i class="fab fa-paypal"></i> steven@paypal.com</p>
-                                <p><label class="btn btn-xs btn-success">Active</label></p>
+                                <p class="find-p"><label class="btn btn-xs btn-success">Active</label></p>
                                 <div class="row last">
                                     <div class="col-xs-12 text-left"><p class="stars"> License: 23-23-54</p></div>
                                 </div>

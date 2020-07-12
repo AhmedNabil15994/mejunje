@@ -91,7 +91,7 @@
     <div class="col-md-5">
         <div class="chart cust-profile">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-md-10 first">
                     <div class="chart-data">
                         <span>A)</span> <span>My Sales Report &nbsp;&nbsp;</span>
                     </div>

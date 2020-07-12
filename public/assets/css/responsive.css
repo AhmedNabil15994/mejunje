@@ -185,7 +185,6 @@
 	}
 	.chart.chart5{
 		min-height: 300px;
-		height: 500px;
 		margin-bottom: 0 !important;
 	}
 	.chart.chart5 .col-md-12{
@@ -227,8 +226,25 @@
 	#data .row.nots{
 		padding-top: 35px !important;
 	}
+	#data .row.nots .notif,
+	.yester_row .notif{
+		margin-bottom: 25px !important;
+	}
 	.paginate_button span{
 		margin-right: 0 !important;
+		font-size: large !important;
+	}
+	.dataTables_info{
+		font-size: 10px !important;
+	}
+	.cust-order .row.last{
+		position: unset;
+	}
+	.tests{
+		margin-top: 25px;
+	}
+	.food-types .row .col-md-6{
+		margin-left: -15px;
 	}
 }
 
@@ -349,10 +365,12 @@
 	.cust-order .order-details p.date{
 		font-size: 12px;
 	}
-	#data .row:first-of-type .col-md-1{
+	#data .row:first-of-type .col-md-1,
+	#data .row:nth-of-type(2) .col-md-1{
 		display: none;
 	}
-	#data .row:first-of-type .col-md-5{
+	#data .row:first-of-type .col-md-5,
+	#data .row:nth-of-type(2) .col-md-5{
 		max-width: 50%;
 		flex: 0 0 50%;
 		margin-left: 0;
@@ -377,7 +395,7 @@
 		font-size: 16px;
 	}
 	.order-det-person{
-		padding-right: 20px !important;
+		padding-right: 0 !important;
 	}
 	.order-det-person .more-info .cust-order{
 		height: auto
@@ -392,7 +410,7 @@
 		max-width: 50% !important;
 		flex: 0 0 50% !important;
 	}
-	#data .row .col-md-10{
+	#data .row .col-md-10:not(.first){
 		max-width: 100%;
 		flex: 0 0 100%;
 	}	
@@ -439,8 +457,77 @@
 		margin-right: 0 !important;
 		font-size: 20px !important;
 	}
+	.last{
+		position: unset !important;
+	}
+	.last p.stars{
+		padding-left: 0 !important;
+	}
+	.cust-order .row.last .text-left{
+		padding-left: 0 !important;
+	}
+	p.find-p{
+		margin-bottom: 5px !important;
+	}
+	.last p.stars{
+		font-size: 14px !important;
+	}
 }
 
 @media(min-width: 1200px ) and ( max-width: 1600px){
-
+	#data div.chart2 .chart-data{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	#data div.chart2.chart3 .chart-data span:first-of-type{
+		width: 100%;
+		display: block;
+		font-size: 22px;
+	}
+	.chart2 .col-md-7{
+		padding: 0 !important;
+	}
+	.chart2 .col-md-7 .chart-info .col-xs-4:first-of-type{
+		padding: 0;
+	}
+	.chart-data.cust-profile.rest-prof .row .col-xs-3.text-center:first-of-type{
+		padding: 0;
+	}
+	.cust-order{
+		height: 225px;
+	}
+	.cust-order .row.last img{
+		width: 30px;
+	}
+	.cust-order .row.last .text-left{
+		padding-right: 0;
+	}
+	.chart-menu .col-md-4{
+		padding-right: 0;
+		max-width: 50%;
+		flex: 0 0 50%;
+		margin-bottom: 15px;
+	}
+	.cust-profile{
+		padding-left: 0 !important;
+	}
+	#data div.chart div.actions .dropdown .menu a{
+		padding: 5px;
+		font-size: 14px;
+	}
+	.order-prof .row .col-xs-6.text-center{
+		height: 175px !important;
+	}
+	.cust-order .order-details{
+		padding-right: 0;
+	}
+	.chart.chart5 .dashed h2{
+		margin-top: 25px;
+	}
+	.chart.chart5 .learn{
+		padding: 10px;
+	}
+	.calendar{
+		top: -40px;
+	}
 }

@@ -10,7 +10,7 @@
     <div class="col-md-5">
         <div class="chart">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-md-10 first">
                     <div class="chart-data">
                         <span>A)</span> <span>Sales Report By Rest</span>
                     </div>
@@ -38,7 +38,7 @@
     <div class="col-md-5">
         <div class="chart">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-md-10 first">
                     <div class="chart-data">
                         <span>B)</span> <span>My Income Report &nbsp;&nbsp;(100%)</span>
                     </div>
