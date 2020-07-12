@@ -9,7 +9,7 @@
         width: 40px;
     }
     .view{
-        margin-top: -3px;
+        margin-top: -5px !important;
     }
 </style>
 @endsection
@@ -26,11 +26,11 @@
                             <table id="example" class="uk-table uk-table-hover" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <td>ID</td>
+                                        <th>ID</th>
                                         <th width="15%">Restaurant</th>
                                         <th>Phone</th>
                                         <th>Email</th>
-                                        <th>Paypal</th>
+                                        <th>Bank Account</th>
                                         <th>Earned This Month</th>
                                         <th># Orders</th>
                                         <th>Created On</th>

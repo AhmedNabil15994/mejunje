@@ -41,6 +41,10 @@ Route::get('/orders', function () {
     return view('orders');
 });
 
+Route::get('/order-profile', function () {
+    return view('order-profile');
+});
+
 Route::get('/customer-profile', function () {
     return view('customer-profile');
 });

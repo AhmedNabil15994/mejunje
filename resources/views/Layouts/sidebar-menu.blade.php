@@ -1,5 +1,4 @@
-<div class="col-md-3 col-lg-2 left_col">
-    <div id="sidebar-wrapper">
+<div id="sidebar-wrapper">
         <div class="sidebar-heading text-center">
             <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="..." class="img-circle">
         </div>
@@ -46,6 +45,12 @@
                 <i class="fa fa-chevron-right"></i>
                 <div class="clearfix"></div>
             </div>
+            <div class="li-wrapper {{ Active(URL::to('/order-profile')) }}">
+                <span class="pull-left"><i class="fas fa-receipt"></i></span>
+                <a href="{{ URL::to('/order-profile') }}" class="pull-left {{ Active(URL::to('/order-profile')) }}">Order Profile</a>
+                <i class="fa fa-chevron-right"></i>
+                <div class="clearfix"></div>
+            </div>
             <div class="li-wrapper {{ Active(URL::to('/food-types')) }}">
                 <span class="pull-left"><i class="fas fa-concierge-bell"></i></span>
                 <a href="{{ URL::to('/food-types') }}" class="pull-left {{ Active(URL::to('/food-types')) }}">Food Types</a>
@@ -61,4 +66,3 @@
             <div class="clearfix"></div>
         </div>
     </div>
-</div>

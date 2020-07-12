@@ -1,0 +1,439 @@
+@media(max-width: 767px){
+/*********************************************** Dashboard**************************************************/
+	.navbar-expand-lg{
+		display: block;
+	}
+	#header .col-md-6 .welcome{
+		padding: 10px;
+	}
+	#header .col-md-6 .welcome h2{
+		font-size: 34px;
+	}
+	#header .row .col-md-6:last-of-type{
+		margin-top: -300px;
+		height: 100px;
+	}
+	.has-search .form-control{
+		margin-top: 25px;
+	}
+	#data{
+		margin-top: -150px;
+	}
+	#data .row{
+		margin-bottom: 25px;
+	}
+	#data div.chart{
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	#data div.chart div.actions{
+		border-radius: 0;
+	}
+	#data div.chart2{
+		margin-bottom: 25px;
+		padding-bottom: 0;
+		min-height: auto;
+	}
+	#data div.chart2 .row .col-md-6{
+		width: 50%;
+	}
+	#data div.chart2 .chart-data{
+		padding: 20px 5px;
+	}
+	#data div.chart2 .chart-chart2{
+		padding-top: 80px;
+	}
+	#kt_chart_quick_stats{
+		height: 100% !important; 
+	}
+	#data div.chart2 .chart-data span:first-of-type{
+		margin-right: 0;
+	}
+	#data div.chart2 .chart-data p.rate{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#data div.chart2 .chart-data p.cost{
+		font-size: 22px;
+	}
+	#data div.chart2 .col-md-7{
+		padding: 0;
+	}
+	.chart-info p.rate{
+		margin-top: 15px;
+		text-align: center;
+	}
+	div.chart2.chart3{
+		padding: 15px 0;
+	}
+	div.chart2.chart3 .row .col-md-4{
+		margin-bottom: 25px;
+	}
+	canvas{
+		max-height: 140px
+	}
+	#data .row:first-child div.chart:first-child{
+		margin-bottom: 25px;
+	}
+/*********************************************** Rests **************************************************/
+	#data div.chart .chart-data span:first-of-type{
+		margin-right: 0;
+	}
+	.rest table tr th{
+		font-size: 14px;
+	}
+	table.dataTable thead .sorting:before, 
+	table.dataTable thead .sorting_asc:before, 
+	table.dataTable thead .sorting_desc:before, 
+	table.dataTable thead .sorting_asc_disabled:before, 
+	table.dataTable thead .sorting_desc_disabled:before,
+	table.dataTable thead .sorting:after, 
+	table.dataTable thead .sorting_asc:after, 
+	table.dataTable thead .sorting_desc:after, 
+	table.dataTable thead .sorting_asc_disabled:after, 
+	table.dataTable thead .sorting_desc_disabled:after,
+	table.dataTable thead .sorting_asc:before,
+	table.dataTable thead .sorting:before, 
+	table.dataTable thead .sorting_asc:before, 
+	table.dataTable thead .sorting_desc:before, 
+	table.dataTable thead .sorting_asc_disabled:before, 
+	table.dataTable thead .sorting_desc_disabled:before, 
+	table.dataTable thead .sorting:after, 
+	table.dataTable thead .sorting_asc:after, 
+	table.dataTable thead .sorting_desc:after, 
+	table.dataTable thead .sorting_asc_disabled:after, 
+	table.dataTable thead .sorting_desc_disabled:after{
+		content: "";
+	}
+/*********************************************** Rests Profile **************************************************/
+	#data div.chart .chart-data.cust-profile.rest-prof{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#data div.chart .chart-data.cust-profile.rest-prof .row .col-xs-3.text-center{
+		margin: 0;
+		padding: 0;
+	}
+	.row.more-info .col-xs-6{
+		padding: 0;
+	}
+	.row.more-info .col-xs-6 label i{
+		font-size: 16px;
+		width: 20px;
+		margin-right: 0;
+	}
+	.chart.cust-profile{
+		margin-bottom: 25px !important;
+	}
+	.row.yester_row .row .col-md-4{
+		padding: 0;
+		margin-bottom: 25px;
+		border-bottom: 1px solid #eee;
+	}
+	.cust-order .col-md-6 img{
+		border-radius: 5px;
+	}
+	#data div.chart .chart-data.cust-profile{
+		padding: 0;
+	}
+	.cust-profile .pd-l-0{
+		padding-right: 0;
+	}
+	.cust-profile .pd-l-0 .form-group .col-xs-4,
+	.cust-profile .pd-l-0 .form-group .col-xs-8{
+		padding: 0;
+	}
+	.cust-profile .pd-l-0 .form-group .col-xs-4 label{
+		font-size: 16px;
+	}
+	.edit-my-data button{
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+	.row .col-md-11.col-md-offset-1 .col-md-6:not(.order-details){
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 25px;
+	}
+	.order-prof{
+		padding-top: 15px !important;
+	}
+	.order-prof .col-xs-6.data{
+		padding-right: 0;
+	}
+	.order-prof .row .col-xs-6.text-center{
+		min-height: 200px;
+	}
+	.order-prof .row.latest p:first-of-type{
+		padding-left: 3px;
+	}
+	.order-prof .more-info label{
+		font-size: 16px;
+	}
+	.order-det-person{
+		padding-right: 20px !important;
+		padding-bottom: 0 !important;
+	}
+	.order-det-person .more-info .cust-order{
+		height: auto
+	}
+	.order-det-person .more-info .cust-order .col-md-6:first-of-type{
+		max-height: 200px;
+	}
+	.cust-order .order-details{
+		height: auto;
+	}
+	.chart.chart5{
+		min-height: 300px;
+		height: 500px;
+		margin-bottom: 0 !important;
+	}
+	.chart.chart5 .col-md-12{
+		padding-right: 15px;
+	}
+	.food-types{
+		padding-right: 20px !important;
+	}
+	.chart.chart5 .dashed h2{
+		margin-top: 20px;
+	}
+	.chart.chart5 .col-md-2{
+		display: none;
+	}
+	.food_types2{
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	.food_types2 .img-holder{
+		margin-bottom: 25px;
+		border-bottom: 1px solid #eee;
+	}
+	.food_types2 .rowest{
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.food_types2 .rowest h4{
+		margin-left: 15px;
+	}
+	.food_types2 .img-holder h5{
+		margin-top: 5px;
+	}
+	.calendar{
+		top: 25px;
+	}
+	.calendar .datepicker.form-control{
+		width: 170px !important;
+	}
+	#data .row.nots{
+		padding-top: 35px !important;
+	}
+}
+
+@media(min-width: 768px ) and ( max-width: 1199px){
+	.navbar-expand-lg{
+		display: block;
+	}
+	#header .col-md-6 .welcome{
+		padding-left: 70px;
+		padding-right: 0;
+	}
+	#header .col-md-6 .welcome h2{
+		font-size: 26px;
+	}
+	.col-md-6 .col-md-8.col-md-offset-2{
+		max-width: 80%;
+	}
+	#data div.chart .chart-data{
+		padding-left: 0;
+	}
+	#data div.chart .chart-data span{
+		font-size: 17px;
+	}
+	#data div.chart div.actions .dropdown button i{
+		font-size: 14px;
+		padding: 0 5px;
+	}
+	#data div.chart div.actions .dropdown .menu a{
+		padding: 5px;
+		font-size: 14px;
+	}
+	#data div.chart2 .chart-data{
+		padding: 20px 5px;
+	}
+	#data div.chart2 .chart-data span:first-of-type{
+		margin-right: 0;
+	}
+	#data div.chart2 .chart-data p.rate{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#data div.chart2 .chart-data p.cost{
+		font-size: 22px;
+	}
+	#kt_chart_quick_stats{
+		height: 100% !important; 
+	}
+	#data .row{
+		margin-bottom: 25px;
+	}
+	#data div.chart2{
+		padding-bottom: 0;
+		min-height: auto;
+	}
+	#data .row .col-md-5 .chart2 .row .col-md-7,
+	#data .row .col-md-5 .chart2 .row .col-md-5{
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	#data .row .col-md-5 .chart2 .row .col-md-5 .chart-data{
+		padding-bottom: 0;
+	}
+	#data .row .col-md-5 .chart2 .row .col-md-5 canvas{
+		max-height: 140px
+	}
+	.chart-info p.rate{
+		margin-top: 15px;
+	}
+	div.chart2.chart3{
+		padding: 15px 0;
+	}
+	div.chart2.chart3 .row .col-md-4{
+		margin-bottom: 15px;
+	}
+	#data div.chart2 .chart-data span{
+		font-size: 19px;
+	}
+	#data div.chart .chart-data span:first-of-type{
+		margin-right: 0;
+	}
+	#data .col-md-5.col-md-offset-1,
+	#data .col-md-6{
+		margin-left: 0;
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+	#data div.chart.pd-b-5 .chart-data{
+		padding: 20px;
+	}
+	.reset-data .chart-chart.chart-chart3{
+		padding-top: 25px;
+	}
+	.reset-data span{
+		display: block;
+		min-height: 45px;
+	}
+	.reset-data p.rate{
+		margin-top: 0;
+	}
+	.row.yest .col-md-11{
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.row.yester_row .row .col-md-4{
+		max-width: 50%;
+		flex: 0 0 50%;
+		margin-bottom: 25px;
+	}
+	.row.yester_row .row .col-md-4 .cust-order{
+		height: 235px;
+	}
+	.cust-order .row.last img{
+		width: 25px;
+	}
+	.cust-order .row.last .text-right{
+		right: 5px;
+	}
+	.cust-order .order-details p.date{
+		font-size: 12px;
+	}
+	#data .row:first-of-type .col-md-1{
+		display: none;
+	}
+	#data .row:first-of-type .col-md-5{
+		max-width: 50%;
+		flex: 0 0 50%;
+		margin-left: 0;
+	}
+	.reset-data span{
+		display: block;
+		min-height: 55px;
+	}
+	.order-prof{
+		padding-top: 15px !important;
+	}
+	.order-prof .col-xs-6.data{
+		padding-right: 0;
+	}
+	.order-prof .row .col-xs-6.text-center{
+		min-height: 200px;
+	}
+	.order-prof .row.latest p:first-of-type{
+		padding-left: 3px;
+	}
+	.order-prof .more-info label{
+		font-size: 16px;
+	}
+	.order-det-person{
+		padding-right: 20px !important;
+	}
+	.order-det-person .more-info .cust-order{
+		height: auto
+	}
+	.order-det-person .more-info .cust-order .col-md-6:first-of-type{
+		max-height: 200px;
+	}
+	.cust-order .order-details{
+		height: auto;
+	}
+	.tests{
+		max-width: 50% !important;
+		flex: 0 0 50% !important;
+	}
+	#data .row .col-md-10{
+		max-width: 100%;
+		flex: 0 0 100%;
+	}	
+	.chart.chart5 .dashed h2{
+		margin-top: 20px;
+	}
+	.chart.chart5 .learn{
+		padding: 10px
+	}
+	.food_types2 .img-holder{
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+	.food_types2{
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	.food_types2 .img-holder{
+		margin-bottom: 25px;
+		border-bottom: 1px solid #eee;
+		display: inline-block;
+		float: left !important;
+	}
+	.food_types2 .rowest{
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.food_types2 .rowest h4{
+		margin-left: 15px;
+	}
+	.food_types2 .img-holder h5{
+		margin-top: 5px;
+	}
+	.food_types2 .rowest{
+		padding-bottom: 0 !important;
+	}
+	.calendar{
+		top: -45px;
+	}
+	.calendar .datepicker.form-control{
+		width: 170px !important;
+	}
+}
+
+@media(min-width: 1200px ) and ( max-width: 1600px){
+
+}

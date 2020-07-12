@@ -79,7 +79,7 @@
                 </div>    
                 <div class="col-md-6">
                     <div class="chart-chart chart-chart2">
-                        <canvas id="kt_chart_quick_stats" width="300" height="200"></canvas>
+                        <canvas id="kt_chart_quick_stats" width="300" height="150"></canvas>
                     </div>
                 </div>         
             </div>
@@ -128,7 +128,7 @@
                     <div class="chart-data">
                         <span>Complete Orders</span>
                         <div class="chart-chart chart-chart3">
-                            <canvas id="kt_chart_quick_stats_3" width="50" height="25"></canvas>
+                            <canvas id="kt_chart_quick_stats_3" width="50" height="20"></canvas>
                         </div>
                         <p class="rate first"><i class="fa fa-arrow-up"></i> 20</p>
                     </div>
@@ -137,7 +137,7 @@
                     <div class="chart-data">
                         <span>Cancel Orders</span>
                         <div class="chart-chart chart-chart3">
-                            <canvas id="kt_chart_quick_stats_4" width="50" height="25"></canvas>
+                            <canvas id="kt_chart_quick_stats_4" width="50" height="20"></canvas>
                         </div>
                         <p class="rate second"><i class="fa fa-arrow-down"></i> 10</p>
                     </div>
@@ -146,7 +146,7 @@
                     <div class="chart-data">
                         <span>New Orders</span>
                         <div class="chart-chart chart-chart3">
-                            <canvas id="kt_chart_quick_stats_5" width="50" height="25"></canvas>
+                            <canvas id="kt_chart_quick_stats_5" width="50" height="20"></canvas>
                         </div>
                         <p class="rate third"><i class="fa fa-arrow-up"></i> 20</p>
                     </div>

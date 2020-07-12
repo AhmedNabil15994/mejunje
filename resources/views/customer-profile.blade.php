@@ -118,7 +118,7 @@
          <div class="chart2 customer">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <div class="chart-data">
+                    <div class="chart-data reset-data">
                         <span>Complete Orders</span>
                         <div class="chart-chart chart-chart3">
                             <canvas id="kt_chart_quick_stats_3" width="50" height="25"></canvas>
@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="chart-data">
+                    <div class="chart-data reset-data">
                         <span>Cancel Orders</span>
                         <div class="chart-chart chart-chart3">
                             <canvas id="kt_chart_quick_stats_4" width="50" height="25"></canvas>
@@ -136,7 +136,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="chart-data">
+                    <div class="chart-data reset-data">
                         <span>New Orders</span>
                         <div class="chart-chart chart-chart3">
                             <canvas id="kt_chart_quick_stats_5" width="50" height="25"></canvas>
@@ -166,7 +166,7 @@
                                 <p class="date">01/07/2020</p>
                                 <p><label class="btn btn-xs btn-primary">In Progress</label></p>
                                 <div class="row last">
-                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
+                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant</div>
                                     <div class="col-xs-3 text-right">$3.21</div>
                                 </div>
                             </div>
@@ -183,7 +183,7 @@
                                 <p class="date">01/07/2020</p>
                                 <p><label class="btn btn-xs btn-success">Active</label></p>
                                 <div class="row last">
-                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
+                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant</div>
                                     <div class="col-xs-3 text-right">$3.21</div>
                                 </div>
                             </div>
@@ -200,7 +200,7 @@
                                 <p class="date">01/07/2020</p>
                                 <p><label class="btn btn-xs btn-danger">Cancel</label></p>
                                 <div class="row last">
-                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant 1</div>
+                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant</div>
                                     <div class="col-xs-3 text-right">$3.21</div>
                                 </div>
                             </div>

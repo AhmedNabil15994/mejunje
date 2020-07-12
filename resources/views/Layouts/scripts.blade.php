@@ -7,11 +7,18 @@
 <script src="{{ URL::to('/assets/js/swiper.js') }}" type="text/javascript"></script>
 <script src="{{ URL::to('/assets/js/swiper.min.js') }}" type="text/javascript"></script>
 <script src="{{ URL::to('/assets/js/chart.min.js') }}" type="text/javascript"></script>
-<script src="{{ URL::to('/assets/plugins/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
-<script  src="{{ URL::to('/assets/plugins/moment/min/moment.min.js')}}"></script>
+<script src="{{ URL::to('/assets/plugins/bootstrap/js/bootstrap.bundle.js') }}" type="text/javascript"></script>
+<script src="{{ URL::to('/assets/plugins/moment/min/moment.min.js')}}"></script>
 <script src="{{ URL::to('/assets/js/bootstrap-datetimepicker.min.js')}}"></script>
 
 <script type="text/javascript">
+
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  
 
 	var revenueChange = function() {
         if ($('#kt_chart_revenue_change').length == 0) {
