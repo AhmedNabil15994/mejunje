@@ -16,7 +16,11 @@
     }
     .uk-width-1-1{
         flex: 0 0 100%;
-        overflow-x: scroll;
+    }
+    @media (max-width: 1600px){
+        .uk-width-1-1{
+            overflow-x: scroll;
+        }
     }
     #sidebar-wrapper .sidebar-heading {
       padding: 0.875rem 1.25rem;
