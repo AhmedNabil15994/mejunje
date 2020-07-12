@@ -227,6 +227,9 @@
 	#data .row.nots{
 		padding-top: 35px !important;
 	}
+	.paginate_button span{
+		margin-right: 0 !important;
+	}
 }
 
 @media(min-width: 768px ) and ( max-width: 1199px){
@@ -431,6 +434,10 @@
 	}
 	.calendar .datepicker.form-control{
 		width: 170px !important;
+	}
+	.paginate_button span{
+		margin-right: 0 !important;
+		font-size: 20px !important;
 	}
 }
 
