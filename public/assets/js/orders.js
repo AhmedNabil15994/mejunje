@@ -57,7 +57,7 @@ database.child('customers/orders/').once('value', function (snapshot) {
                             '<td>'+proccess+'</td>'+
                             '<td>'+status+'</td>'+
                             '<td>'+
-                                '<button class="btn btn-xs btn-default view" data-area="'+orderObj.id+'">View</button>'+
+                                '<button class="btn btn-xs btn-default view" data-area="'+userSnapshot.key+'">View</button>'+
                             '</td>'+
                         '</tr>';
         $('#example tbody').append(myElement);
