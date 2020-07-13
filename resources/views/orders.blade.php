@@ -19,7 +19,6 @@
                                         <th width="20%">Order</th>
                                         <th>Customer</th>
                                         <th>Restaurant</th>
-                                        <th>Delivery Man</th>
                                         <th>Dish Name</th>
                                         <th>Date</th>
                                         <th>Total</th>
@@ -28,43 +27,7 @@
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="tr">
-                                        <td>1</td>
-                                        <td>
-                                            <img src="{{ URL::to('/assets/images/logo.jpeg') }}">
-                                            <span>Burger number ###43344</span>
-                                        </td>
-                                        <td>
-                                            <img src="{{ URL::to('/assets/images/logo.jpeg') }}">
-                                            <span>Ahmed Nabil</span>
-                                        </td>
-                                        <td>
-                                            <img src="{{ URL::to('/assets/images/logo.jpeg') }}">
-                                            <span>Restaurant 1</span>
-                                        </td>
-                                        <td>
-                                            <img src="{{ URL::to('/assets/images/logo.jpeg') }}">
-                                            <span>Delivery 1</span>
-                                        </td>
-                                        <td>
-                                            <p>1 Burger & 1 Pepsi</p>
-                                        </td>
-                                        <td>
-                                            <p>01/07/2020</p> 
-                                            <p>11:08:54</p>
-                                        </td>
-                                        <td>
-                                            <p>$ 3.21</p>
-                                            <p>Credit Card</p>
-                                        </td>
-                                        <td><label class="label label-primary">In Progress</label></td>
-                                        <td><label class="label label-success">New</label></td>
-                                        <td>
-                                            <button class="btn btn-xs btn-default view">View</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <tbody></tbody>
                             </table>
                             <!--end: Datatable -->
                         </div>
@@ -75,4 +38,8 @@
     </div>
 </div>
 
+@endsection
+
+@section('scripts')
+<script type="text/javascript" src="{{ URL::to('/assets/js/orders.js') }}"></script>
 @endsection

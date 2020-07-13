@@ -239,3 +239,7 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+<script type="text/javascript" src="{{ URL::to('/assets/js/order-profile.js') }}"></script>
+@endsection

@@ -16,9 +16,9 @@
                                 <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
                             </div>
                             <div class="col-xs-9">
-                                <h5>Restaurant 1</h5>
-                                <p class="desc">Delivery Dodd’s fest GDF </p>
-                                <p class="stars"><i class="fa fa-star"></i> 4.7</p>
+                                <h5></h5>
+                                <p class="desc"></p>
+                                <p class="stars"><i class="fa fa-star"></i> <b class="value"></b></p>
                             </div>
                             <hr>
                         </div>
@@ -29,7 +29,7 @@
                                         <label><i class="fa fa-envelope"></i> Email</label>
                                     </div>
                                     <div class="col-xs-6">
-                                        <label class="label-2">rest1@admin.com</label>
+                                        <label class="label-2 email"></label>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@
                                         <label><i class="fa fa-phone"></i> Phone</label>
                                     </div>
                                     <div class="col-xs-6">
-                                        <label class="label-2">12012301230</label>
+                                        <label class="label-2 phone"></label>
                                     </div>
                                 </div>
                             </div>
@@ -49,17 +49,17 @@
                                         <label><i class="fa fa-map-marker-alt"></i> Address</label>
                                     </div>
                                     <div class="col-xs-6">
-                                        <label class="label-2">Minuf, Madinet Menuf, Menuf, Menofia Governorate, Egypt</label>
+                                        <label class="label-2 address"></label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 pd-l-0">
                                 <div class="form-group">
                                     <div class="col-xs-6">
-                                        <label><i class="fab fa-paypal"></i> Paypal</label>
+                                        <label><i class="fa fa-university"></i> Bank Account</label>
                                     </div>
                                     <div class="col-xs-6">
-                                        <label class="label-2">rest1@paypal.com</label>
+                                        <label class="label-2 paypal"></label>
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
                                         <label><i class="fa fa-dollar-sign"></i> Earned This Month</label>
                                     </div>
                                     <div class="col-xs-6">
-                                        <label class="label-2">rest1@paypal.com</label>
+                                        <label class="label-2 earned"></label>
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@
                                         <label><i class="fa fa-file-invoice"></i> # Orders</label>
                                     </div>
                                     <div class="col-xs-6">
-                                        <label class="label-2">500</label>
+                                        <label class="label-2 number"></label>
                                     </div>
                                 </div>
                             </div>
@@ -97,11 +97,14 @@
                     <div class="row more-info">
                         <div class="col-xs-12 pd-l-0">
                             <div class="form-group">
+
+
+
                                 <div class="col-xs-6">
                                     <label><i class="fa fa-motorcycle"></i> Delivery</label>
                                 </div>
                                 <div class="col-xs-6">
-                                    <label class="label-2">Yes</label>
+                                    <label class="label-2 delivery"></label>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +114,7 @@
                                     <label><i class="fa fa-map-marker-alt"></i> Delivery Location</label>
                                 </div>
                                 <div class="col-xs-6">
-                                    <label class="label-2">Minuf, Madinet Menuf, Menuf, Menofia Governorate, Egypt</label>
+                                    <label class="label-2 delivery-location"></label>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +124,7 @@
                                     <label><i class="fa fa-dollar-sign"></i> Delivery Price</label>
                                 </div>
                                 <div class="col-xs-6">
-                                    <label class="label-2">$0 / Free</label>
+                                    <label class="label-2 delivery-price"></label>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +134,7 @@
                                     <label><i class="fa fa-box-open"></i> Pick Up</label>
                                 </div>
                                 <div class="col-xs-6">
-                                    <label class="label-2">True</label>
+                                    <label class="label-2 pick-up"></label>
                                 </div>
                             </div>
                         </div>
@@ -142,40 +145,9 @@
 
         <div class="chart pd-b-5">
             <div class="row">
-                <div class="chart-data">
+                <div class="chart-data w-100">
                     <h4><i class="far fa-clock"></i> Open Times</h4>
-                    <div class="row more-info">
-                        <div class="col-xs-12 pd-l-0">
-                            <div class="form-group">
-                                <div class="col-xs-6">
-                                    <label><i class="fa fa-calendar"></i> Monday</label>
-                                </div>
-                                <div class="col-xs-6">
-                                    <label class="label-2">12:00 - 20:00</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 pd-l-0">
-                            <div class="form-group">
-                                <div class="col-xs-6">
-                                    <label><i class="fa fa-calendar"></i> Tuesday</label>
-                                </div>
-                                <div class="col-xs-6">
-                                    <label class="label-2">10:00 - 21:00</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 pd-l-0">
-                            <div class="form-group">
-                                <div class="col-xs-6">
-                                    <label><i class="fa fa-calendar"></i> Friday</label>
-                                </div>
-                                <div class="col-xs-6">
-                                    <label class="label-2">16:00 - 22:00</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="row more-info"></div>
                 </div>   
             </div>
         </div>
@@ -252,68 +224,7 @@
         <div class="chart chart-menu">
             <div class="row yester_row">
                 <h4><i class="fa fa-bars"></i> Menu</h4>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Burger</h5>
-                                <p class="desc dish-desc">Burger number ###43344</p>
-                                <p class="date dish-desc">1 Pepsi</p>
-                                <p class="date dish-desc">Drinks 1:5</p>
-                                <p class="date dish-desc">Food Truck</p>
-                                <p class="date">01/07/2020</p>
-                                <p><label class="btn btn-xs btn-success">Active</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-6 text-left"><p class="stars"> <i class="fa fa-star"></i> 3.4</p></div>
-                                    <div class="col-xs-6 text-right">$3.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Burger</h5>
-                                <p class="desc dish-desc">Burger number ###43344</p>
-                                <p class="date dish-desc">1 Pepsi</p>
-                                <p class="date dish-desc">Drinks 1:5</p>
-                                <p class="date dish-desc">Food Truck</p>
-                                <p class="date">01/07/2020</p>
-                                <p><label class="btn btn-xs btn-danger">In-Active</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-6 text-left"><p class="stars"> <i class="fa fa-star"></i> 3.4</p></div>
-                                    <div class="col-xs-6 text-right">$3.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Burger</h5>
-                                <p class="desc dish-desc">Burger number ###43344</p>
-                                <p class="date dish-desc">1 Pepsi</p>
-                                <p class="date dish-desc">Drinks 1:5</p>
-                                <p class="date dish-desc">Food Truck</p>
-                                <p class="date">01/07/2020</p>
-                                <p><label class="btn btn-xs btn-success">Active</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-6 text-left"><p class="stars"> <i class="fa fa-star"></i> 3.4</p></div>
-                                    <div class="col-xs-6 text-right">$3.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
+                <div class="row my-menu"></div>   
             </div>
         </div>
     </div>
@@ -325,59 +236,7 @@
         <div class="chart chart-menu">
             <div class="row yester_row">
                 <h4><i class="fa fa-receipt"></i> Orders</h4>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Bagal Story</h5>
-                                <p class="desc">Burger number ###43344</p>
-                                <p class="date">01/07/2020</p>
-                                <p><label class="btn btn-xs btn-primary">In Progress</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant</div>
-                                    <div class="col-xs-3 text-right">$3.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Bagal Story</h5>
-                                <p class="desc">Burger number ###43344</p>
-                                <p class="date">01/07/2020</p>
-                                <p><label class="btn btn-xs btn-success">Active</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant</div>
-                                    <div class="col-xs-3 text-right">$3.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Bagal Story</h5>
-                                <p class="desc">Burger number ###43344</p>
-                                <p class="date">01/07/2020</p>
-                                <p><label class="btn btn-xs btn-danger">Cancel</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant</div>
-                                    <div class="col-xs-3 text-right">$3.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
+                <div class="row my-orders"></div>   
             </div>
         </div>
     </div>
@@ -389,65 +248,14 @@
         <div class="chart chart-menu">
             <div class="row yester_row">
                 <h4><i class="fa fa-motorcycle"></i> Delivery Men</h4>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Steven</h5>
-                                <p class="desc dish-desc">description ##$#% hfghbhgf</p>
-                                <p class="date dish-desc"><i class="fa fa-envelope"></i> steven@hotmail.com</p>
-                                <p class="date dish-desc"><i class="fa fa-phone"></i> 0134567876</p>
-                                <p class="date dish-desc"><i class="fab fa-paypal"></i> steven@paypal.com</p>
-                                <p class="find-p"><label class="btn btn-xs btn-danger">In-Active</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-12 text-left"><p class="stars"> License: 23-23-54</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Steven</h5>
-                                <p class="desc dish-desc">description ##$#% hfghbhgf</p>
-                                <p class="date dish-desc"><i class="fa fa-envelope"></i> steven@hotmail.com</p>
-                                <p class="date dish-desc"><i class="fa fa-phone"></i> 0134567876</p>
-                                <p class="date dish-desc"><i class="fab fa-paypal"></i> steven@paypal.com</p>
-                                <p class="find-p"><label class="btn btn-xs btn-success">Active</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-12 text-left"><p class="stars"> License: 23-23-54</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Steven</h5>
-                                <p class="desc dish-desc">description ##$#% hfghbhgf</p>
-                                <p class="date dish-desc"><i class="fa fa-envelope"></i> steven@hotmail.com</p>
-                                <p class="date dish-desc"><i class="fa fa-phone"></i> 0134567876</p>
-                                <p class="date dish-desc"><i class="fab fa-paypal"></i> steven@paypal.com</p>
-                                <p class="find-p"><label class="btn btn-xs btn-success">Active</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-12 text-left"><p class="stars"> License: 23-23-54</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
+                <div class="row my-delivery"></div>   
             </div>
         </div>
     </div>
 </div>
 
+@endsection
+
+@section('scripts')
+<script type="text/javascript" src="{{ URL::to('/assets/js/rest-profile.js') }}"></script>
 @endsection

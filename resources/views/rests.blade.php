@@ -35,49 +35,10 @@
                                         <th># Orders</th>
                                         <th>Created On</th>
                                         <th>Status</th>
-                                        <th class="text-center">Actions</th>
+                                        <th class="text-center" width="15%">Actions</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="tr">
-                                        <td>1</td>
-                                        <td>
-                                            <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
-                                            <span>Restaurant 1</span>
-                                        </td>
-                                        <td>12012301230</td>
-                                        <td>rest1@admin.com</td>
-                                        <td>rest1@paypal.com</td>
-                                        <td>10</td>
-                                        <td>20</td>
-                                        <td>01/7/2020</td>
-                                        <td><label class="label label-success">Active</label></td>
-                                        <td>
-                                            <button class="btn btn-xs btn-primary view"><i class="fa fa-eye"></i></button>
-                                            <button class="btn-xs btn-danger"> <i class="fa fa-times"></i></button>
-                                            <button class="btn-xs btn-warning"> Paid</button>
-                                        </td>
-                                    </tr>
-                                    <tr class="tr">
-                                        <td>2</td>
-                                        <td>
-                                            <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
-                                            <span>Restaurant 2</span>
-                                        </td>
-                                        <td>12012301230</td>
-                                        <td>rest2@admin.com</td>
-                                        <td>rest2@paypal.com</td>
-                                        <td>100</td>
-                                        <td>200</td>
-                                        <td>01/7/2018</td>
-                                        <td><label class="label label-danger">In-Active</label></td>
-                                        <td>
-                                            <button class="btn btn-xs btn-primary view"><i class="fa fa-eye"></i></button>
-                                            <button class="btn-xs btn-success"> <i class="fa fa-check"></i></button>
-                                            <button class="btn-xs btn-warning"> Paid</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <tbody></tbody>
                             </table>
                             <!--end: Datatable -->
                         </div>
@@ -88,4 +49,8 @@
     </div>
 </div>
 
+@endsection
+
+@section('scripts')
+<script type="text/javascript" src="{{ URL::to('/assets/js/rests.js') }}"></script>
 @endsection

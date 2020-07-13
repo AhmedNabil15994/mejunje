@@ -14,7 +14,7 @@
                     <div class="chart-data cust-profile">
                         <div class="row text-center">
                             <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
-                            <h5 class="text-center">Ahmed Nabil</h5>
+                            <h5 class="text-center"></h5>
                             <p class="text-center"><i class="fas fa-dot-circle"></i> Offline</p>
                             <hr>
                         </div>
@@ -26,7 +26,7 @@
                                     </div>
                                     <div class="col-xs-8">
                                         <div class="form-group has-search">
-                                            <input type="text" class="form-control" disabled placeholder="admin@admin.com">
+                                            <input type="text" class="form-control email" disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="col-xs-8">
                                         <div class="form-group has-search">
-                                            <input type="text" class="form-control" disabled placeholder="Cairo">
+                                            <textarea class="form-control address" disabled></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                                     </div>
                                     <div class="col-xs-8">
                                         <div class="form-group has-search">
-                                            <input type="text" class="form-control" disabled placeholder="Facebook">
+                                            <input type="text" class="form-control login_type" disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@
                                     </div>
                                     <div class="col-xs-8">
                                         <div class="form-group has-search">
-                                            <input type="text" class="form-control" disabled placeholder="20">
+                                            <input type="text" class="form-control paid" disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@
                                     </div>
                                     <div class="col-xs-8">
                                         <div class="form-group has-search">
-                                            <input type="text" class="form-control" disabled placeholder="50">
+                                            <input type="text" class="form-control number" disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -154,61 +154,12 @@
         <div class="chart chart-menu">
             <div class="row yester_row">
                 <h4><i class="fa fa-receipt"></i> Orders</h4>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Bagal Story</h5>
-                                <p class="desc">Burger number ###43344</p>
-                                <p class="date">01/07/2020</p>
-                                <p><label class="btn btn-xs btn-primary">In Progress</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant</div>
-                                    <div class="col-xs-3 text-right">$3.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Bagal Story</h5>
-                                <p class="desc">Burger number ###43344</p>
-                                <p class="date">01/07/2020</p>
-                                <p><label class="btn btn-xs btn-success">Active</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant</div>
-                                    <div class="col-xs-3 text-right">$3.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="cust-order">
-                            <div class="col-md-6 col-xs-12">
-                                <img src="{{ URL::to('/assets/images/meal.jpeg') }}">
-                            </div>
-                            <div class="col-md-6 col-xs-12 order-details">
-                                <h5>Bagal Story</h5>
-                                <p class="desc">Burger number ###43344</p>
-                                <p class="date">01/07/2020</p>
-                                <p><label class="btn btn-xs btn-danger">Cancel</label></p>
-                                <div class="row last">
-                                    <div class="col-xs-9 text-left"><img src="{{ URL::to('/assets/images/logo.jpeg') }}"> Restaurant</div>
-                                    <div class="col-xs-3 text-right">$3.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
+                <div class="row my-orders"></div>   
             </div>
         </div>
     </div>
 </div>
+@endsection
+@section('scripts')
+<script type="text/javascript" src="{{ URL::to('/assets/js/customer-profile.js') }}"></script>
 @endsection

@@ -21,32 +21,12 @@
                                         <th>Email</th>
                                         <th>Location</th>
                                         <th width="15%">Login Type</th>
-                                        <th>Monthly Sales</th>
-                                        <th># Order This Month</th>
+                                        <th>Paid This Month</th>
+                                        <th># Order</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="tr">
-                                        <td>1</td>
-                                        <td>
-                                            <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
-                                            <span>Ahmed Nabil</span>
-                                        </td>
-                                        <td>admin@admin.com</td>
-                                        <td>
-                                            <p>Shebin El-kom</p>
-                                            <p></p>
-                                        </td>
-                                        <td>Facebook</td>
-                                        
-                                        <td>20</td>
-                                        <td>50</td>
-                                        <td>
-                                            <button class="btn btn-xs btn-default view">View</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <tbody></tbody>
                             </table>
                             <!--end: Datatable -->
                         </div>
@@ -57,4 +37,8 @@
     </div>
 </div>
 
+@endsection
+
+@section('scripts')
+<script type="text/javascript" src="{{ URL::to('/assets/js/customers.js') }}"></script>
 @endsection

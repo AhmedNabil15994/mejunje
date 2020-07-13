@@ -187,13 +187,28 @@ var _initSparklineChart = function(src, data, color, border) {
     return new Chart(src, config);
 }
 
+function setCookie(key, value, expiry) {
+    var expires = new Date();
+    expires.setTime(expires.getTime() + (expiry * 60 * 60 * 1000)); // Expires in hours
+    document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+}
+
+function getCookie(key) {
+    var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+    return keyValue ? keyValue[2] : null;
+}
+
+function removeCookie(key) {
+    var keyValue = getCookie(key);
+    setCookie(key, keyValue, '-1');
+}
 
 $(function(){
 	revenueChange();
 	dailySales($('#myChart'));
 	dailySales($('#myChart2'));
 
-    $('#example').DataTable();
+    // $('#example').DataTable();
 	$('.datepicker').datetimepicker({
         format: 'DD/MM/YYYY',
     });

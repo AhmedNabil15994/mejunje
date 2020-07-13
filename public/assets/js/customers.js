@@ -1,0 +1,49 @@
+database.child('customers/profiles/').once('value', function (snapshot) {
+    var i = 0;
+    snapshot.forEach(function(userSnapshot) {
+        $('#example tbody tr.odd').empty();
+        var customerObj = userSnapshot.val();
+        var custUID = customerObj.uid;
+
+        
+        var myElement = '<tr class="tr" id="'+custUID+'">'+
+                            '<td>'+ ++i +'</td>'+
+                            '<td>'+
+                                '<img src="'+customerObj.photoURL+'" alt="">'+
+                                '<span>'+customerObj.displayName+'</span>'+
+                            '</td>'+
+                            '<td>'+customerObj.email+'</td>'+
+                            '<td><p>'+customerObj.location.address+'</p><p></p></td>'+
+                            '<td>'+customerObj.login+'</td>'+
+                            '<td>'+getCustInfo(custUID)+'</td>'+
+                            '<td>'+getCustInfo(custUID)+'</td>'+
+                            '<td>'+
+                                '<button class="btn btn-xs btn-default view" data-area="'+customerObj.uid+'">View</button>'+
+                            '</td>'+
+                        '</tr>';
+        $('#example tbody').append(myElement);
+    });
+    $('#example').DataTable();
+});
+
+function getCustInfo(custUID){
+    var orderCount = 0;
+    var total = 0;
+    database.child('customers/orders/').on('value', function (snapshot2) {
+        snapshot2.forEach(function(orderSnapshot) {
+            var orderObj = orderSnapshot.val();
+            if(orderObj.customer.uid == custUID && moment(orderObj.date,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
+                total+= orderObj.totalPrice;
+                orderCount+=1;
+            }
+        });
+        $('tr#'+custUID+' td:nth-of-type(6)').html(total);
+        $('tr#'+custUID+' td:nth-of-type(7)').html(orderCount);
+    });
+}
+
+$(document).on('click','tr.tr td .view',function(){
+    var custUID = $(this).data('area');
+    setCookie('cust_id', custUID,1);
+    window.location.href = '/customer-profile';
+});
