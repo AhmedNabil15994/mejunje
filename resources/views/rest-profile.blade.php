@@ -147,7 +147,7 @@
             <div class="row">
                 <div class="chart-data w-100">
                     <h4><i class="far fa-clock"></i> Open Times</h4>
-                    <div class="row more-info"></div>
+                    <div class="row more-info my-times"></div>
                 </div>   
             </div>
         </div>

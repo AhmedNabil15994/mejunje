@@ -183,7 +183,7 @@ database.child('restaurants/profile/'+restUID).on('value', function (snapshot) {
 								'</div>'+
 							'</div>'+
 						'</div>';
-		$('.chart-data .row.more-info').append(myString);
+		$('.chart-data .row.more-info.my-times').append(myString);
 	});
 
 
