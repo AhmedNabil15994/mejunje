@@ -2,7 +2,8 @@ var total = 0;
 database.child('customers/orders/').on('value', function (snapshot2) {
     snapshot2.forEach(function(orderSnapshot) {
         var orderObj = orderSnapshot.val();
-        if(orderObj.status == 'Completed' && moment(orderObj.date,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
+        var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
+        if(orderObj.status == 'Completed' && moment(orderDate,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
             total+= orderObj.totalPrice;   
         }
     });
@@ -47,7 +48,7 @@ function getRestMenu(foodType){
                 for (var i = 0; i < dishObj.foodTypeList.length; i++) {
                     types += dishObj.foodTypeList[i].foodType+', ';
                     if(foodType == dishObj.foodTypeList[i].foodType){
-                        myDishes += '<div class="col-md-4">'+
+                        myDishes += '<div class="col-md-6">'+
                                 '<div class="cust-order">'+
                                     '<div class="col-md-6 col-xs-12">'+
                                         '<img src="'+dishObj.photo+'">'+
@@ -56,6 +57,8 @@ function getRestMenu(foodType){
                                         '<h5>'+dishObj.dishName+'</h5>'+
                                         '<p class="desc dish-desc">'+dishObj.dishDesc+'</p>'+
                                         '<p class="date dish-desc">'+dishes+'</p>'+
+                                        '<p class="date dish-desc">Drinks '+dishObj.minDrinks+':'+dishObj.maxDrinks+'</p>'+
+                                        '<p class="date dish-desc">'+types+'</p>'+
                                         '<div class="row last">'+
                                             '<div class="col-xs-6 text-left"><p class="stars"> <i class="fa fa-star"></i> '+rate+'</p></div>'+
                                             '<div class="col-xs-6 text-right">$'+price+'</div>'+

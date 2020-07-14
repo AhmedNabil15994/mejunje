@@ -46,13 +46,14 @@ database.child('customers/orders/'+order_id).on('value', function (snapshot) {
     }
 
     getRestRate(restObj.uid);
+    var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
 
     $('.order-data h5').html('#' + orderObj.orderNo);
     $('.order-data .row img').attr('src',orderObj.photo);
     $('.order-data p.desc').html(orderObj.dishDesc);
     $('.order-data p.stars:first-of-type b').html(rate);
     $('.order-data p.stars:last-of-type b').html(orderObj.totalPrice);
-    $('.order-data .date').html(orderObj.date +' '+orderObj.time);
+    $('.order-data .date').html(orderDate +' '+orderObj.time);
     $('.order-data .dish').html(dishes);
     $('.order-data .drink').html(drinks);
     $('.order-data .type').html(types);
@@ -109,8 +110,9 @@ function getRestOrderInfo(restUID){
     var orders = '';
     database.child('customers/orders/').on('value', function (snapshot2) {
         snapshot2.forEach(function(orderSnapshot) {
-            var orderObj = orderSnapshot.val();           		
-            if(orderObj.restaurantUid == restUID && moment(orderObj.date,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
+            var orderObj = orderSnapshot.val(); 
+            var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
+            if(orderObj.restaurantUid == restUID && moment(orderDate,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
                 if(orderObj.status == 'Completed'){
                     total+= orderObj.totalPrice;   
                 }

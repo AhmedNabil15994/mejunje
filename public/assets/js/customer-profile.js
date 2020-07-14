@@ -9,6 +9,7 @@ function getRestOrderInfo(custUID){
     database.child('customers/orders/').on('value', function (snapshot2) {
         snapshot2.forEach(function(orderSnapshot) {
             var orderObj = orderSnapshot.val();
+            var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
             if(orderObj.customer.uid == custUID){
                 var proccess='<label class="btn btn-xs btn-success">New</label>';
                 if(orderObj.proccess == 'Canceled'){
@@ -31,7 +32,6 @@ function getRestOrderInfo(custUID){
                 }else if(orderObj.status == 'Completed'){
                     completedOrders+=1;
                 }
-
                 orders += '<div class="col-md-4">'+
                                 '<div class="cust-order">'+
                                     '<div class="col-md-6 col-xs-12">'+
@@ -40,7 +40,7 @@ function getRestOrderInfo(custUID){
                                     '<div class="col-md-6 col-xs-12 order-details">'+
                                         '<h5>#'+ orderObj.orderNo +'</h5>'+
                                         '<p class="desc">'+ orderObj.dishDesc+'</p>'+
-                                        '<p class="date">'+orderObj.date+'</p>'+
+                                        '<p class="date">'+orderDate+'</p>'+
                                         '<p>'+proccess+'</p>'+
                                         '<div class="row last">'+
                                             '<div class="col-xs-9 text-left">'+
@@ -53,7 +53,7 @@ function getRestOrderInfo(custUID){
                             '</div>';
 
             }
-            if(orderObj.customer.uid == custUID && moment(orderObj.date,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
+            if(orderObj.customer.uid == custUID && moment(orderDate,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
                 if(orderObj.status == 'Completed'){
                     total+= orderObj.totalPrice;   
                 }

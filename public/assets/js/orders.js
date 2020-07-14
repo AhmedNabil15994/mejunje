@@ -30,6 +30,8 @@ database.child('customers/orders/').once('value', function (snapshot) {
         }else if(orderObj.proccess == 'Out Of Delivery'){
             proccess='<label class="label label-warning">Out Of Delivery</label>';
         }
+        var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
+
 
         var myElement = '<tr class="tr" id="'+orderObj.id+'">'+
                             '<td>'+ ++x +'</td>'+
@@ -47,7 +49,7 @@ database.child('customers/orders/').once('value', function (snapshot) {
                             '</td>'+
                             '<td>'+dishName+'</td>'+
                             '<td>'+
-                                '<p>'+orderObj.date+'</p>'+
+                                '<p>'+orderDate+'</p>'+
                                 '<p>'+orderObj.time+'</p>'+
                             '</td>'+
                             '<td>'+

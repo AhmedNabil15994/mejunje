@@ -15,7 +15,8 @@ database.child('customers/orders/').on('value', function (snapshot2) {
         }else if(orderObj.status == 'Completed'){
             completedOrders+=1;
         }
-        if(moment(orderObj.date,'DD/MM/YYYY')  == moment(new Date() , 'DD/MM/YYY') ){
+        var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
+        if(moment(orderDate,'DD/MM/YYYY')  == moment(new Date() , 'DD/MM/YYY') ){
             if(orderObj.status == 'Completed'){
                 todayIncome+= orderObj.totalPrice;  
                 todayCompletedOrders+=1; 
