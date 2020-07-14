@@ -11,13 +11,7 @@
             </div>
             <div class="li-wrapper {{ Active(URL::to('/rests')) }}">
                 <span class="pull-left"><i class="fas fa-comment-dots"></i></span>
-                <a href="{{ URL::to('/rests') }}" class="pull-left {{ Active(URL::to('/rests')) }}">Rest List</a>
-                <i class="fa fa-chevron-right"></i>
-                <div class="clearfix"></div>
-            </div>
-            <div class="li-wrapper {{ Active(URL::to('/rest-profile')) }}">
-                <span class="pull-left"><i class="fas fa-user"></i></span>
-                <a href="{{ URL::to('/rest-profile') }}" class="pull-left {{ Active(URL::to('/rest-profile')) }}">Rest Profile</a>
+                <a href="{{ URL::to('/rests') }}" class="pull-left {{ Active(URL::to('/rests')) }}">Restaurant List</a>
                 <i class="fa fa-chevron-right"></i>
                 <div class="clearfix"></div>
             </div>
@@ -27,27 +21,9 @@
                 <i class="fa fa-chevron-right"></i>
                 <div class="clearfix"></div>
             </div>
-            <div class="li-wrapper {{ Active(URL::to('/customer-profile')) }}">
-                <span class="pull-left"><i class="fas fa-user"></i></span>
-                <a href="{{ URL::to('/customer-profile') }}" class="pull-left {{ Active(URL::to('/customer-profile')) }}">Customer Profile</a>
-                <i class="fa fa-chevron-right"></i>
-                <div class="clearfix"></div>
-            </div>
-            <div class="li-wrapper">
-                <span class="pull-left"><i class="fas fa-user"></i></span>
-                <a href="{{ URL::to('/login') }}" class="pull-left">Login</a>
-                <i class="fa fa-chevron-right"></i>
-                <div class="clearfix"></div>
-            </div>
             <div class="li-wrapper {{ Active(URL::to('/orders')) }}">
                 <span class="pull-left"><i class="fas fa-receipt"></i></span>
                 <a href="{{ URL::to('/orders') }}" class="pull-left {{ Active(URL::to('/orders')) }}">Order List</a>
-                <i class="fa fa-chevron-right"></i>
-                <div class="clearfix"></div>
-            </div>
-            <div class="li-wrapper {{ Active(URL::to('/order-profile')) }}">
-                <span class="pull-left"><i class="fas fa-receipt"></i></span>
-                <a href="{{ URL::to('/order-profile') }}" class="pull-left {{ Active(URL::to('/order-profile')) }}">Order Profile</a>
                 <i class="fa fa-chevron-right"></i>
                 <div class="clearfix"></div>
             </div>
