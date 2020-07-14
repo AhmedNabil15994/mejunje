@@ -245,7 +245,7 @@
     .my-orders .col-md-4,
     .my-menu .col-md-4
     .my-delivery .col-md-4{
-        margin-bottom: 15px;
+        margin-bottom: 15px !important;
     }
     .my-orders,
     .my-menu,
