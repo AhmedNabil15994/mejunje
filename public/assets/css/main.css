@@ -396,6 +396,7 @@
     }
     p.rate.first{
         color: #41C719 !important;
+        font-size: 25px !important;
     }
     p.rate.first i{
         transform: rotateZ(-45deg);
@@ -404,6 +405,7 @@
     }
     p.rate.second{
         color: #F64000 !important;
+        font-size: 25px !important;
     }
     p.rate.second i{
         transform: rotateZ(-45deg) !important;
@@ -412,6 +414,7 @@
     }
     p.rate.third{
         color: #22637d !important;
+        font-size: 25px !important;
     }
     p.rate.third i{
         transform: rotateZ(-45deg);
@@ -1036,10 +1039,11 @@
     .swiper-container {
         width: 100%;
         margin-left: 0;
-        height: 200px;
+        height: 180px;
+        margin-bottom: 25px;
     }
     .food_types2 .swiper-slide{
-        width: 70px !important; 
+        width: 100px !important; 
         height: 140px;
         margin-right: 40px;
         border-radius: 50px;
@@ -1048,6 +1052,13 @@
         text-align: center;
         cursor: pointer;
         transition: all ease-in-out .25s;
+    }
+    .food-types h2 span.total{
+        margin: 0 !important;
+        font-size: inherit !important;
+    }
+    .food_types2 .col-xs-6.text-left{
+        padding: 0 !important;
     }
     .food_types2 .swiper-slide.swiper-slide-active,
     .food_types2 .swiper-slide:hover{
@@ -1078,7 +1089,7 @@
     }
     .food_types2 .swiper-slide p{
         /*margin-top: 10px;*/
-        font-size: 18px;  
+        font-size: 16px;  
     }
     .food_types2 .food-details{
         display: block;

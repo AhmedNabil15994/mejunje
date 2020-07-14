@@ -3,12 +3,15 @@ function getRestOrderInfo(restUID){
     var orderCount = 0;
     var total = 0;
     var orders = '';
+    var newOrders = 0;
+    var cancelledOrders = 0;
+    var completedOrders = 0;
     database.child('customers/orders/').on('value', function (snapshot2) {
         snapshot2.forEach(function(orderSnapshot) {
             var orderObj = orderSnapshot.val();
             if(orderObj.restaurantUid == restUID){
            		var proccess='<label class="btn btn-xs btn-success">New</label>';
-				if(orderObj.proccess == 'Cancelled'){
+				if(orderObj.proccess == 'Canceled'){
 		            proccess='<label class="btn btn-xs btn-danger">Cancelled</label>';
 		        }else if(orderObj.proccess == 'In Progress'){
 		            proccess='<label class="btn btn-xs btn-primary">In Progress</label>';
@@ -40,14 +43,27 @@ function getRestOrderInfo(restUID){
                  				'</div>'+
                  			'</div>';
 
+                if(orderObj.status == 'New'){
+                    newOrders+=1;
+                }else if(orderObj.status == 'Canceled'){
+                    cancelledOrders+=1;
+                }else if(orderObj.status == 'Completed'){
+                    completedOrders+=1;
+                }
+                
             }
             if(orderObj.restaurantUid == restUID && moment(orderObj.date,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
-                total+= orderObj.totalPrice;
+                if(orderObj.status == 'Completed'){
+                    total+= orderObj.totalPrice;   
+                }
                 orderCount+=1;
             }
         });
         $('.rest-prof label.number').html(orderCount);
         $('.rest-prof label.earned').html(total);
+        $('p.rate.first i').after(completedOrders);
+        $('p.rate.second i').after(cancelledOrders);
+        $('p.rate.third i').after(newOrders);
         $('.my-orders').html(orders);
     });
 }

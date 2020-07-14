@@ -3,12 +3,15 @@ function getRestOrderInfo(custUID){
     var orderCount = 0;
     var total = 0;
     var orders = '';
+    var newOrders = 0;
+    var cancelledOrders = 0;
+    var completedOrders = 0;
     database.child('customers/orders/').on('value', function (snapshot2) {
         snapshot2.forEach(function(orderSnapshot) {
             var orderObj = orderSnapshot.val();
             if(orderObj.customer.uid == custUID){
                 var proccess='<label class="btn btn-xs btn-success">New</label>';
-                if(orderObj.proccess == 'Cancelled'){
+                if(orderObj.proccess == 'Canceled'){
                     proccess='<label class="btn btn-xs btn-danger">Cancelled</label>';
                 }else if(orderObj.proccess == 'In Progress'){
                     proccess='<label class="btn btn-xs btn-primary">In Progress</label>';
@@ -18,6 +21,15 @@ function getRestOrderInfo(custUID){
                     proccess='<label class="btn btn-xs btn-dark">Confirmed</label>';
                 }else if(orderObj.proccess == 'Out Of Delivery'){
                     proccess='<label class="btn btn-xs btn-warning">Out Of Delivery</label>';
+                }
+
+
+                if(orderObj.status == 'New'){
+                    newOrders+=1;
+                }else if(orderObj.status == 'Canceled'){
+                    cancelledOrders+=1;
+                }else if(orderObj.status == 'Completed'){
+                    completedOrders+=1;
                 }
 
                 orders += '<div class="col-md-4">'+
@@ -42,12 +54,17 @@ function getRestOrderInfo(custUID){
 
             }
             if(orderObj.customer.uid == custUID && moment(orderObj.date,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
-                total+= orderObj.totalPrice;
+                if(orderObj.status == 'Completed'){
+                    total+= orderObj.totalPrice;   
+                }
                 orderCount+=1;
             }
         });
         $('.cust-profile input.number').val(orderCount);
         $('.cust-profile input.paid').val(total > 0 ? total : 0);
+        $('p.rate.first i').after(completedOrders);
+        $('p.rate.second i').after(cancelledOrders);
+        $('p.rate.third i').after(newOrders);
         $('.my-orders').html(orders);
     });
 }

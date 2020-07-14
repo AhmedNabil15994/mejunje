@@ -224,29 +224,30 @@ $(function(){
 		elem.slideToggle(500);
 	});
 
-    var mySwiper = new Swiper('.swiper-container', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: false,
-      slidesPerView: 10,
-      initialSlide:0,
+    // var mySwiper = new Swiper('.swiper-container', {
+    //   // Optional parameters
+    //   direction: 'horizontal',
+    //   loop: false,
+    //   slidesPerView: 10,
+      
+    //   // initialSlide:0,
 
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
+    //   // If we need pagination
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //   },
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    //   // Navigation arrows
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
 
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    });
+    //   // And if we need scrollbar
+    //   scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //   },
+    // });
 
     $('.nav-link').on('click',function(){
         $(this).addClass('active').siblings().removeClass('active');

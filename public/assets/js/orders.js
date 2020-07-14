@@ -13,13 +13,13 @@ database.child('customers/orders/').once('value', function (snapshot) {
         var status='<label class="label label-success">New</label>';
         var proccess='<label class="label label-success">New</label>';
 
-        if(orderObj.status == 'Cancelled'){
+        if(orderObj.status == 'Canceled'){
             status='<label class="label label-danger">Cancelled</label>';
         }else if(orderObj.status == 'Completed'){
             status='<label class="label label-info">Completed</label>';
         }
 
-        if(orderObj.proccess == 'Cancelled'){
+        if(orderObj.proccess == 'Canceled'){
             proccess='<label class="label label-danger">Cancelled</label>';
         }else if(orderObj.proccess == 'In Progress'){
             proccess='<label class="label label-primary">In Progress</label>';

@@ -33,7 +33,9 @@ function getCustInfo(custUID){
         snapshot2.forEach(function(orderSnapshot) {
             var orderObj = orderSnapshot.val();
             if(orderObj.customer.uid == custUID && moment(orderObj.date,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
-                total+= orderObj.totalPrice;
+                if(orderObj.status == 'Completed'){
+                    total+= orderObj.totalPrice;   
+                }
                 orderCount+=1;
             }
         });

@@ -192,7 +192,7 @@
                         <div class="chart-chart chart-chart3 mg-t-10">
                             <canvas id="kt_chart_quick_stats_3" width="50" height="25"></canvas>
                         </div>
-                        <p class="rate first"><i class="fa fa-arrow-up"></i> 20</p>
+                        <p class="rate first"><i class="fa fa-arrow-up"></i> </p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -201,7 +201,7 @@
                         <div class="chart-chart chart-chart3 mg-t-10">
                             <canvas id="kt_chart_quick_stats_4" width="50" height="25"></canvas>
                         </div>
-                        <p class="rate second"><i class="fa fa-arrow-down"></i> 10</p>
+                        <p class="rate second"><i class="fa fa-arrow-down"></i> </p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -210,7 +210,7 @@
                         <div class="chart-chart chart-chart3 mg-t-10">
                             <canvas id="kt_chart_quick_stats_5" width="50" height="25"></canvas>
                         </div>
-                        <p class="rate third"><i class="fa fa-arrow-up"></i> 20</p>
+                        <p class="rate third"><i class="fa fa-arrow-up"></i> </p>
                     </div>
                 </div>
             </div>
@@ -224,7 +224,7 @@
         <div class="chart chart-menu">
             <div class="row yester_row">
                 <h4><i class="fa fa-bars"></i> Menu</h4>
-                <div class="row my-menu"></div>   
+                <div class="row my-menu type-menu"></div>   
             </div>
         </div>
     </div>

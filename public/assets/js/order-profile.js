@@ -26,7 +26,7 @@ database.child('customers/orders/'+order_id).on('value', function (snapshot) {
     }
 
     var proccess='<label class="label-2 btn-xs label-success">New</label>';
-	if(orderObj.proccess == 'Cancelled'){
+	if(orderObj.proccess == 'Canceled'){
         proccess='<label class="label-2 btn-xs label-danger">Cancelled</label>';
     }else if(orderObj.proccess == 'In Progress'){
         proccess='<label class="label-2 btn-xs label-primary">In Progress</label>';
@@ -39,7 +39,7 @@ database.child('customers/orders/'+order_id).on('value', function (snapshot) {
     }
 
     var status='<label class="label-2 btn-xs btn-success">New</label>';
-	if(orderObj.status == 'Cancelled'){
+	if(orderObj.status == 'Canceled'){
         status='<label class="label-2 btn-xs btn-danger">Cancelled</label>';
     }else if(orderObj.status == 'Completed'){
         status='<label class="label-2 btn-xs btn-info">Completed</label>';
@@ -111,7 +111,9 @@ function getRestOrderInfo(restUID){
         snapshot2.forEach(function(orderSnapshot) {
             var orderObj = orderSnapshot.val();           		
             if(orderObj.restaurantUid == restUID && moment(orderObj.date,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
-                total+= orderObj.totalPrice;
+                if(orderObj.status == 'Completed'){
+                    total+= orderObj.totalPrice;   
+                }
                 orderCount+=1;
             }
         });
