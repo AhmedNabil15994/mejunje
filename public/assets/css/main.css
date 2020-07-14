@@ -243,9 +243,9 @@
         max-height: 80px;
     }
     .my-orders .col-md-4,
-    .my-menu .col-md-4
+    .my-menu .col-md-4,
     .my-delivery .col-md-4{
-        margin-bottom: 15px !important;
+        margin-bottom: 15px;
     }
     .my-orders,
     .my-menu,
