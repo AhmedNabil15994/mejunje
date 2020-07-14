@@ -22,6 +22,7 @@
               <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt=""/>
           </div>
           <h3>Login To Mejunje</h3>
+            <form method="get" action="{{ URL::to('/dashboard') }}">
               <div class="form-group">
                   <input type="text" class="form-controls" placeholder="Your Email *" value="" />
               </div>

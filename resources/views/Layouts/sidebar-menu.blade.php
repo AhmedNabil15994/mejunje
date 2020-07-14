@@ -1,6 +1,8 @@
 <div id="sidebar-wrapper">
         <div class="sidebar-heading text-center">
-            <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="..." class="img-circle">
+            <a href="{{ URL::to('/') }}">
+                <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="..." class="img-circle">
+            </a>
         </div>
         <div class="list-group list-group-flush">
             <div class="li-wrapper {{ Active(URL::to('/dashboard')) }}">
