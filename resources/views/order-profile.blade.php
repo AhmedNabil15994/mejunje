@@ -29,6 +29,16 @@
                             <div class="col-xs-12 pd-l-0">
                                 <div class="form-group">
                                     <div class="col-xs-6">
+                                        <label><i class="fa fa-fingerprint"></i> ID</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label class="label-2 id1"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 pd-l-0">
+                                <div class="form-group">
+                                    <div class="col-xs-6">
                                         <label><i class="fa fa-clock"></i> Date</label>
                                     </div>
                                     <div class="col-xs-6">
@@ -122,6 +132,16 @@
                             <div class="col-xs-12 pd-l-0">
                                 <div class="form-group">
                                     <div class="col-xs-6">
+                                        <label><i class="fa fa-fingerprint"></i> ID</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label class="label-2 id2"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 pd-l-0">
+                                <div class="form-group">
+                                    <div class="col-xs-6">
                                         <label><i class="fa fa-envelope"></i> Email</label>
                                     </div>
                                     <div class="col-xs-6">
@@ -201,6 +221,7 @@
                             <div class="col-md-6 col-xs-12 order-details">
                                 <h5></h5>
                                 <p class="desc dish-desc"></p>
+                                <p class="date dish-desc id"><i class="fa fa-fingerprint"></i></p>
                                 <p class="date dish-desc cust-email"><i class="fa fa-envelope"></i></p>
                                 <p class="date dish-desc cust-address"><i class="fa fa-map-marker-alt"></i></p>
                             </div>
@@ -223,6 +244,7 @@
                             <div class="col-md-6 col-xs-12 order-details">
                                 <h5></h5>
                                 <p class="desc dish-desc descr"></p>
+                                <p class="date dish-desc id"><i class="fa fa-fingerprint"></i></p>
                                 <p class="date dish-desc email"><i class="fa fa-envelope"></i></p>
                                 <p class="date dish-desc phone"><i class="fa fa-phone"></i></p>
                                 <p class="date dish-desc paypal"><i class="fab fa-paypal"></i></p>

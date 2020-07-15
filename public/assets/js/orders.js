@@ -34,7 +34,7 @@ database.child('customers/orders/').once('value', function (snapshot) {
 
 
         var myElement = '<tr class="tr" id="'+orderObj.id+'">'+
-                            '<td>'+ ++x +'</td>'+
+                            '<td>'+ userSnapshot.key +'</td>'+
                             '<td>'+
                                 '<img src="'+orderObj.photo+'" alt="">'+
                                 '<span>'+orderObj.orderNo+'</span>'+

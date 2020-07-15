@@ -55,7 +55,7 @@ function getRestMenu(foodType){
                                     '</div>'+
                                     '<div class="col-md-6 col-xs-12 order-details">'+                           
                                         '<h5>'+dishObj.dishName+'</h5>'+
-                                        '<p class="desc dish-desc">'+dishObj.dishDesc+'</p>'+
+                                        '<p class="desc dish-desc">'+dishObj.dishDesc+'<br>ID: '+dishSnapShot.key+'</p>'+
                                         '<p class="date dish-desc">'+dishes+'</p>'+
                                         '<p class="date dish-desc">Drinks '+dishObj.minDrinks+':'+dishObj.maxDrinks+'</p>'+
                                         '<p class="date dish-desc">'+types+'</p>'+

@@ -57,6 +57,7 @@ database.child('customers/orders/'+order_id).on('value', function (snapshot) {
     $('.order-data .dish').html(dishes);
     $('.order-data .drink').html(drinks);
     $('.order-data .type').html(types);
+    $('.order-data .id1').html(order_id);
     $('.order-data .payment').html(orderObj.paymentMethod);
     $('.order-data .proccess').html(proccess);
     $('.order-data .status').html(status);
@@ -65,6 +66,7 @@ database.child('customers/orders/'+order_id).on('value', function (snapshot) {
     $('.customer-data p.desc.dish-desc').html('Login By: '+custObj.login);
     $('.customer-data .cust-email i').after(custObj.email);
     $('.customer-data .cust-address i').after(custObj.location.address);
+    $('.customer-data .id i').after(custObj.uid);
     $('.customer-data img').attr('src',custObj.photoURL);
 
     if(driverObj == null){
@@ -75,6 +77,7 @@ database.child('customers/orders/'+order_id).on('value', function (snapshot) {
     $('.driver-data img').attr('src',driverObj.photo);
     $('.driver-data .descr').html(driverObj.description);
     $('.driver-data .email i').after(driverObj.email);
+    $('.driver-data .id i').after(driverObj.uid);
     $('.driver-data .phone i').after(driverObj.phone);
     $('.driver-data .paypal i').after(driverObj.paypal);
     $('.driver-data .find-p label').html('Active');
@@ -97,7 +100,8 @@ function getRestRate(restUID){
 		$('.rest-data p.desc').html(restObj.description);
 		$('.rest-data .row img').attr('src',restObj.photo);
 		$('.rest-data label.email').html(restObj.email);
-		$('.rest-data label.phone').html(restObj.phone);
+        $('.rest-data label.phone').html(restObj.phone);
+		$('.rest-data label.id2').html(restObj.uid);
 		$('.rest-data label.paypal').html(restObj.paypal);
 		$('.rest-data label.address').html(restObj.deliveryOptions.restaurantLocation.address);
 	});

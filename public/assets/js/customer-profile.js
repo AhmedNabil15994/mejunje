@@ -75,6 +75,7 @@ getRestOrderInfo(custUID);
 database.child('customers/profiles/'+custUID).on('value', function (snapshot) {
     var custObj = snapshot.val();
     $('.cust-profile h5').html(custObj.displayName);
+    $('.cust-profile input.id').val(custObj.uid);
     $('.cust-profile .row img').attr('src',custObj.photoURL);
     $('.cust-profile input.email').val(custObj.email);
     $('.cust-profile input.login_type').val(custObj.login);

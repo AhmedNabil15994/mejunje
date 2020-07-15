@@ -22,6 +22,18 @@
                             <div class="col-xs-12 pd-l-0">
                                 <div class="form-group">
                                     <div class="col-xs-4">
+                                        <label>ID</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="form-group has-search">
+                                            <input type="text" class="form-control id" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 pd-l-0">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
                                         <label>Email</label>
                                     </div>
                                     <div class="col-xs-8">

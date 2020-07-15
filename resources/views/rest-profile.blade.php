@@ -26,6 +26,16 @@
                             <div class="col-xs-12 pd-l-0">
                                 <div class="form-group">
                                     <div class="col-xs-6">
+                                        <label><i class="fa fa-fingerprint"></i> ID</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label class="label-2 id"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 pd-l-0">
+                                <div class="form-group">
+                                    <div class="col-xs-6">
                                         <label><i class="fa fa-envelope"></i> Email</label>
                                     </div>
                                     <div class="col-xs-6">

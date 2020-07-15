@@ -13,7 +13,7 @@ database.child('restaurants/profile/').once('value', function (snapshot) {
         }
 
         var myElement = '<tr class="tr" id="'+restUID+'">'+
-                            '<td>'+ ++i +'</td>'+
+                            '<td>'+ restUID +'</td>'+
                             '<td>'+
                                 '<img src="'+restaurantObj.photo+'" alt="">'+
                                 '<span>'+restaurantObj.name+'</span>'+

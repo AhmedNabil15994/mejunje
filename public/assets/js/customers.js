@@ -6,8 +6,9 @@ database.child('customers/profiles/').once('value', function (snapshot) {
         var custUID = customerObj.uid;
 
         
-        var myElement = '<tr class="tr" id="'+custUID+'">'+
-                            '<td>'+ ++i +'</td>'+
+        if(custUID != null){
+            var myElement = '<tr class="tr" id="'+custUID+'">'+
+                            '<td>'+ custUID +'</td>'+
                             '<td>'+
                                 '<img src="'+customerObj.photoURL+'" alt="">'+
                                 '<span>'+customerObj.displayName+'</span>'+
@@ -21,7 +22,8 @@ database.child('customers/profiles/').once('value', function (snapshot) {
                                 '<button class="btn btn-xs btn-default view" data-area="'+customerObj.uid+'">View</button>'+
                             '</td>'+
                         '</tr>';
-        $('#example tbody').append(myElement);
+            $('#example tbody').append(myElement);
+        }
     });
     $('#example').DataTable();
 });

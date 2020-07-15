@@ -32,7 +32,7 @@ function getRestOrderInfo(restUID){
                  					'</div>'+
                  					'<div class="col-md-6 col-xs-12 order-details">'+
                  						'<h5>#'+ orderObj.orderNo +'</h5>'+
-                 						'<p class="desc">'+ orderObj.dishDesc+'</p>'+
+                 						'<p class="desc">'+ orderObj.dishDesc+'<br> ID: '+orderObj.id+'</p>'+
                  						'<p class="date">'+orderDate+'</p>'+
                  						'<p>'+proccess+'</p>'+
                  						'<div class="row last">'+
@@ -63,6 +63,7 @@ function getRestOrderInfo(restUID){
         });
         $('.rest-prof label.number').html(orderCount);
         $('.rest-prof label.earned').html(total);
+        $('.rest-prof label.id').html(restUID);
         $('p.rate.first i').after(completedOrders);
         $('p.rate.second i').after(cancelledOrders);
         $('p.rate.third i').after(newOrders);
@@ -112,7 +113,7 @@ function getRestMenu(restUID){
             				'</div>'+
 							'<div class="col-md-6 col-xs-12 order-details">'+            				
 								'<h5>'+dishObj.dishName+'</h5>'+
-								'<p class="desc dish-desc">'+dishObj.dishDesc+'</p>'+
+								'<p class="desc dish-desc">'+dishObj.dishDesc+'<br>ID: '+dishSnapshot.key+'</p>'+
             					'<p class="date dish-desc">'+dishes+'</p>'+
             					'<p class="date dish-desc">Drinks '+dishObj.minDrinks+':'+dishObj.maxDrinks+'</p>'+
             					'<p class="date dish-desc">'+types+'</p>'+

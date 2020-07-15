@@ -15,8 +15,8 @@
                             <table id="example" class="uk-table uk-table-hover" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th width="5%">ID</th>
-                                        <th width="20%">Order</th>
+                                        <th width="15%">ID</th>
+                                        <th width="10%">Order</th>
                                         <th>Customer</th>
                                         <th>Restaurant</th>
                                         <th>Dish Name</th>
