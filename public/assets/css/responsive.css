@@ -639,4 +639,8 @@
 	#header .col-md-6 .welcome h2{
 		font-size: 35px;
 	}
+	.uk-width-1-1{
+		width: 100%;
+		overflow-x: scroll;
+	}
 }

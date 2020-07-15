@@ -1,7 +1,7 @@
 @extends('Layouts.master')
 @section('title','Notifications')
 @section('name','Ahmed')
-@section('extra_title','Notifications (5)')
+@section('extra_title','Notifications')
 @section('extra_design')
 <div class="form-group has-search calendar">
     <span class="fa fa-calendar form-control-feedback"></span>
@@ -12,40 +12,9 @@
 
 <div class="row nots">
     <div class="col-md-1"></div>
-    <div class="col-md-10">
-        <div class="chart chart6 notif">
-            <div class="row notif_row">
-                <span class="dot"></span>
-                <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
-                <span class="name">Ahmed Nabil</span>
-                <span class="desc">changed his password</span>
-                <span class="time">9:35 am</span>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="chart chart6 notif">
-            <div class="row notif_row">
-                <span class="dot"></span>
-                <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
-                <span class="name">Ahmed Nabil</span>
-                <span class="desc">changed his password</span>
-                <span class="time">9:35 am</span>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="chart chart6 notif">
-            <div class="row notif_row">
-                <span class="dot"></span>
-                <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
-                <span class="name">Ahmed Nabil</span>
-                <span class="desc">changed his password</span>
-                <span class="time">9:35 am</span>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
+    <div class="col-md-10"></div>
 </div>
-
+{{-- 
 <div class="row yest">
     <div class="col-md-1"></div>
     <div class="col-md-10">
@@ -73,7 +42,7 @@
         </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <div class="row">
     <div class="col-md-1"></div>
@@ -84,4 +53,8 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('scripts')
+<script type="text/javascript" src="{{ URL::to('/assets/js/notifications.js') }}"></script>
 @endsection
