@@ -31,7 +31,7 @@
                             <div class="col-md-6">
                                 <div class="welcome">
                                     <h2>Welcome back, <span class="name">@yield('name')</span>.</h2>
-                                    <p>@yield('extra_title')</p>
+                                    <p class="extra_title">@yield('extra_title')<span class="item-counts"></span></p>
                                 </div>
                             </div>
                             <div class="col-md-6">

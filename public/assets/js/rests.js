@@ -1,5 +1,6 @@
 database.child('restaurants/profile/').once('value', function (snapshot) {
     var i = 0;
+    var itemCount = 0;
     snapshot.forEach(function(userSnapshot) {
         $('#example tbody tr.odd').empty();
         var restaurantObj = userSnapshot.val();
@@ -11,7 +12,7 @@ database.child('restaurants/profile/').once('value', function (snapshot) {
             statusButton = '<button class="btn-xs btn-danger" data-area="'+restUID+'"> <i class="fa fa-times"></i></button>';
             statusLabel = '<label class="label label-success">Active</label>';
         }
-
+        itemCount+=1;
         var myElement = '<tr class="tr" id="'+restUID+'">'+
                             '<td>'+ restUID +'</td>'+
                             '<td>'+
@@ -32,6 +33,7 @@ database.child('restaurants/profile/').once('value', function (snapshot) {
                             '</td>'+
                         '</tr>';
         $('#example tbody').append(myElement);
+        $('.extra_title span.item-counts').html(' ('+itemCount+')');
     });
     $('#example').DataTable();
 });

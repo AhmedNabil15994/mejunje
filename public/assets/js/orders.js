@@ -1,5 +1,6 @@
 database.child('customers/orders/').once('value', function (snapshot) {
     var x = 0;
+    var itemCount = 0;
     snapshot.forEach(function(userSnapshot) {
         $('#example tbody tr.odd').empty();
         var orderObj = userSnapshot.val();
@@ -31,7 +32,7 @@ database.child('customers/orders/').once('value', function (snapshot) {
             proccess='<label class="label label-warning">Out Of Delivery</label>';
         }
         var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
-
+        itemCount+=1;
 
         var myElement = '<tr class="tr" id="'+orderObj.id+'">'+
                             '<td>'+ userSnapshot.key +'</td>'+
@@ -63,6 +64,7 @@ database.child('customers/orders/').once('value', function (snapshot) {
                             '</td>'+
                         '</tr>';
         $('#example tbody').append(myElement);
+        $('.extra_title span.item-counts').html(' ('+itemCount+')');
     });
     $('#example').DataTable();
 });

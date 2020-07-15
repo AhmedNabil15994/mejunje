@@ -1,12 +1,12 @@
 database.child('customers/profiles/').once('value', function (snapshot) {
     var i = 0;
+    var itemCount = 0;
     snapshot.forEach(function(userSnapshot) {
         $('#example tbody tr.odd').empty();
         var customerObj = userSnapshot.val();
         var custUID = customerObj.uid;
-
-        
         if(custUID != null){
+            itemCount+=1;
             var myElement = '<tr class="tr" id="'+custUID+'">'+
                             '<td>'+ custUID +'</td>'+
                             '<td>'+
@@ -23,6 +23,7 @@ database.child('customers/profiles/').once('value', function (snapshot) {
                             '</td>'+
                         '</tr>';
             $('#example tbody').append(myElement);
+            $('.extra_title span.item-counts').html(' ('+itemCount+')');
         }
     });
     $('#example').DataTable();
