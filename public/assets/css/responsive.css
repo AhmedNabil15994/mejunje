@@ -643,4 +643,10 @@
 		width: 100%;
 		overflow-x: scroll;
 	}
+	.cust-profile .col-xs-12.pd-l-0{
+		padding-right: 0 !important;
+	}
+	.cust-profile .col-xs-12.pd-l-0 .col-xs-6{
+		padding: 0;
+	}
 }
