@@ -5,7 +5,7 @@
 @section('extra_design')
 <div class="form-group has-search calendar">
     <span class="fa fa-calendar form-control-feedback"></span>
-    <input type="text" class="datepicker form-control" placeholder="Pick A Date">
+    <input type="text" class="form-control" placeholder="Pick A Date">
 </div>
 @endsection
 @section('content')
