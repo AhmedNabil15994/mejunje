@@ -466,7 +466,7 @@
     }
     table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting{
         padding:5px !important;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: bold;
     }
     .rest table tr th{
