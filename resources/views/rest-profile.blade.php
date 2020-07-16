@@ -276,6 +276,18 @@
     </div>
 </div>
 
+<div class="row yest">
+    <div class="col-md-1"></div>
+    <div class="col-md-11">
+        <div class="chart chart-menu">
+            <div class="row yester_row">
+                <h4><i class="fa fa-dollar-sign"></i> Payment Logs</h4>
+                <div class="row my-paids"></div>   
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection
 
 @section('scripts')

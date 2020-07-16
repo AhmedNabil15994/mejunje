@@ -245,7 +245,7 @@
     .my-orders .col-md-4,
     .my-menu .col-md-4,
     .my-delivery .col-md-4,
-    .my-rates .col-md-4{
+    .my-rates .col-md-3{
         margin-bottom: 15px;
     }
     .my-rates .cust-order .order-details{
@@ -257,8 +257,32 @@
     .my-orders,
     .my-menu,
     .my-delivery,
-    .my-rates{
+    .my-rates,
+    .my-paids{
         width: 100%;
+    }
+    .my-paids .cust-order{
+        height: 100px !important
+    }
+    .my-paids .col-xs-6{
+        padding: 20px;
+    }
+    .my-paids .col-xs-6 span{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    .my-paids .col-xs-6.text-right{
+        direction: rtl;
+    }
+    .my-paids span.month,
+    .my-paids span.total{
+        color: #db5143;
+        font-weight: bold;
+        font-size: 20px !important;
+    }
+    .my-paids span.date{
+        color: #999;
     }
     .my-rates .cust-order{
         height: 70px !important;

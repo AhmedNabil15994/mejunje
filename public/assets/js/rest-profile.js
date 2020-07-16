@@ -220,8 +220,27 @@ database.child('restaurants/profile/'+restUID).on('value', function (snapshot) {
                         '</div>'+
                     '</div>'+
                 '</div>';
-                console.log(item);
         $('.chart-menu .my-rates').append(userRates);
+    });
+    $.each(restObj.paids , function(index,item){
+        var paid = 'Paid';
+        if(item.paid == false){
+            paid = 'Not Paid';
+        }
+        var myPaid = '<div class="col-xs-12">'+
+                        '<div class="cust-order">'+
+                            '<div class="col-xs-6 ">'+
+                                '<span class="month">'+moment(item.date, 'YYYY-MM-DDTHH:mm:ss.SSS[Z]').format('MMMM')+'</span>'+
+                                '<span class="date">'+item.date+'</span>'+
+                            '</div>'+
+                            '<div class="col-xs-6 text-right">'+
+                                '<span class="total">$ '+item.total+'</span>'+
+                                '<span class="date">'+paid+'</span>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>';
+
+        $('.my-paids').append(myPaid);
     });
 
 });
