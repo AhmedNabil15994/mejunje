@@ -106,6 +106,7 @@ $(document).on('click','.btn-warning.paid',function(e){
             total: total.toString(),
             paid: true,
             paidForMonth: new Date().getMonth()+1,
+            paidForYear: moment().format('YYYY'),
         });
     });
 });
