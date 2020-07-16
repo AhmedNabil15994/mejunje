@@ -1,4 +1,4 @@
-body{
+  body{
     background: linear-gradient(to right, #F14441 , #F95F55);
     color: #73879C;
     font-family: "Helvetica Neue",Roboto,Arial,"Droid Sans",sans-serif;
@@ -6,6 +6,29 @@ body{
     font-weight: 400;
     line-height: 1.471;
     min-height: 100vh;
+  }
+  .toast {
+      background-color: #1ab394;
+      color: #FFF;
+      opacity: 1 !important;
+  }
+  .toast-title{
+      font-size: 16px;
+  }
+  .toast-message{
+    font-size: 14px;
+  }
+  .toast-success {
+      background-color: #1dc9b7;
+  }
+  .toast-error {
+      background-color: #F14441;
+  }
+  .toast-info {
+      background-color: #23c6c8;
+  }
+  .toast-warning {
+      background-color: #f8ac59;
   }
   .login-form-2{
       width: 400px;

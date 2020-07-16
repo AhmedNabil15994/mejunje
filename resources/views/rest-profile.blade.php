@@ -173,7 +173,7 @@
                         <span>A)</span> <span>My Income Report &nbsp;&nbsp; (100%)</span>
                     </div>
                     <div class="chart-chart reset-chart">
-                        <canvas id="myChart" width="300" height="220"></canvas>
+                        <canvas id="myChart" width="300" height="250"></canvas>
                     </div>
                 </div>        
                 <div class="col-md-2">
@@ -197,7 +197,7 @@
         <div class="chart cust-profile pd-b-0">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <div class="chart-data reset-data">
+                    <div class="chart-data reset-data" style="padding-right: 0">
                         <span>Complete Orders</span>
                         <div class="chart-chart chart-chart3 mg-t-10">
                             <canvas id="kt_chart_quick_stats_3" width="50" height="25"></canvas>

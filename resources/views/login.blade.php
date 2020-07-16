@@ -11,8 +11,16 @@
     <link rel="icon" href="{{ asset('assets/images/logo.jpeg') }}" type="image/ico" />
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="{{ URL::to('/assets/plugins/bootstrap/css/bootstrap.min.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('assets/css/toastr.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('/assets/css/login.css') }}">
+    <script type="text/javascript">
+        var keyValue = document.cookie.match('(^|;) ?login_auth=([^;]*)(;|$)');
+        var valValue = keyValue ? keyValue[2] : null;
+        if(valValue == 1){
+            window.location.href='/dashboard';
+        }
+    </script>
+
   </head>
 
   <body>
@@ -22,19 +30,21 @@
               <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt=""/>
           </div>
           <h3>Login To Mejunje</h3>
-            <form method="get" action="{{ URL::to('/dashboard') }}">
-              <div class="form-group">
-                  <input type="text" class="form-controls" placeholder="Your Email *" value="" />
-              </div>
-              <div class="form-group">
-                  <input type="password" class="form-controls" placeholder="Your Password *" value="" />
-              </div>
-              <div class="form-group">
-                  <input type="submit" class="btnSubmit" value="Login" />
-              </div>
-          </form>
+          <div class="form-group">
+              <input type="text" class="form-controls email" placeholder="Your Email *" value="" />
+          </div>
+          <div class="form-group">
+              <input type="password" class="form-controls password" placeholder="Your Password *" value="" />
+          </div>
+          <div class="form-group">
+              <input type="submit" class="btnSubmit" value="Login" />
+          </div>
         </div>
     </div>
+    <script src="{{ URL::to('/assets/js/jquery.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/js/toastr.min.js')}}"></script>
+    <script src="{{ URL::to('/assets/js/notify.js') }}" type="text/javascript"></script>
+    <script src="{{ URL::to('/assets/js/login.js') }}" type="text/javascript"></script>
   </body>
 
 </html>

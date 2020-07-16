@@ -6,6 +6,7 @@
 @section('content')
 
 <div class="row">
+    <input type="hidden" name="tokens">
     <div class="col-md-1"></div>
     <div class="col-md-5">
         <div class="chart">

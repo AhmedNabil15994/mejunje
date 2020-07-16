@@ -3,30 +3,14 @@ $("#menu-toggle").click(function(e) {
     $("#wrapper").toggleClass("toggled");
 });
 
-var revenueChange = function() {
+var revenueChange = function(myData) {
     if ($('#kt_chart_revenue_change').length == 0) {
         return;
     }
 
     Morris.Donut({
         element: 'kt_chart_revenue_change',
-        data: [{
-                label: "Rest Name",
-                value: 25
-            },
-            {
-                label: "Rest Name",
-                value: 25
-            },
-            {
-                label: "Rest Name",
-                value: 25
-            },
-            {
-                label: "Rest Name",
-                value: 25
-            }
-        ],
+        data: myData,
         colors: [
             '#29C7A6',
             '#F16D1F',
@@ -36,7 +20,7 @@ var revenueChange = function() {
     });
 }
 
-var dailySales = function(elem) {
+var dailySales = function(elem,labels,data) {
     if (elem.length == 0) {
         return;
     }
@@ -44,9 +28,9 @@ var dailySales = function(elem) {
     var chart = new Chart(elem, {
         type: 'bar',
         data: {
-	        labels: ['M', 'T', 'W', 'T', 'F', 'S' , 'S'],
+	        labels: labels,
 	        datasets: [{
-	            data: [12, 19, 3, 5, 2, 3,20],
+	            data: data,
 	            backgroundColor: [
 	                '#F14441',
 	                '#F14441',
@@ -204,9 +188,8 @@ function removeCookie(key) {
 }
 
 $(function(){
-	revenueChange();
-	dailySales($('#myChart'));
-	dailySales($('#myChart2'));
+	// dailySales($('#myChart'),['M', 'T', 'W', 'T', 'F', 'S' , 'S'],[12, 19, 3, 5, 2, 3,20]);
+	// dailySales($('#myChart2'));
 
     // $('#example').DataTable();
 	$('.datepicker').datetimepicker({
@@ -285,7 +268,6 @@ $(function(){
     $(window).on('load',function(){
         if($(window).width() <= 991){
             var myString = $('#features .container .first-col').clone();
-            console.log(myString);
             $('#features .container .first-col').remove();
             $('#features .container').append(myString);
         }
