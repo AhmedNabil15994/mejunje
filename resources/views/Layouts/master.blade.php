@@ -38,7 +38,7 @@
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="form-group has-search">
                                         <span class="fa fa-search form-control-feedback"></span>
-                                        <input type="text" class="form-control" placeholder="Search here">
+                                        <input type="text" class="form-control search-data" placeholder="Search here">
                                     </div>
                                     @yield('extra_design')
                                 </div>

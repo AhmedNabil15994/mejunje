@@ -29,13 +29,16 @@ database.child('restaurants/profile/').once('value', function (snapshot) {
                             '<td>'+
                                 '<button class="btn btn-xs btn-primary view" data-area="'+restUID+'"><i class="fa fa-eye"></i></button>'+
                                 statusButton+
-                                '<button class="btn-xs btn-warning"> Paid</button>'+
+                                '<button class="btn-xs btn-warning paid" data-area="'+restUID+'"> Paid</button>'+
                             '</td>'+
                         '</tr>';
         $('#example tbody').append(myElement);
         $('.extra_title span.item-counts').html(' ('+itemCount+')');
     });
-    $('#example').DataTable();
+    oTable = $('#example').DataTable();
+    $('.search-data').keyup(function(){
+          oTable.search($(this).val()).draw() ;
+    })
 });
 
 function getRestInfo(restUID){
@@ -79,4 +82,30 @@ $(document).on('click','tr.tr td .view',function(){
     var restUID = $(this).data('area');
     setCookie('rest_id', restUID,1);
     window.location.href = '/rest-profile';
+});
+
+$(document).on('click','.btn-warning.paid',function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    var restUID = $(this).data('area');
+    var today = moment().format('DD/MM/YYYY');
+
+    database.child('customers/orders/').on('value', function (snapshot2) {
+        var total = 0;
+        snapshot2.forEach(function(orderSnapshot) {
+            var orderObj = orderSnapshot.val();
+            var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
+            if(orderObj.restaurantUid == restUID && moment(orderDate,'DD/MM/YYYY').month()+1  == new Date().getMonth()+1 ){
+                if(orderObj.status == 'Completed' && orderObj.paymentMethod == 'Credit Card'){
+                    total+= orderObj.totalPrice;   
+                }
+            }
+        });
+        database.child('restaurants/profile/'+restUID+'/paids').push({
+            date: today.toString(),
+            total: total.toString(),
+            paid: true,
+            paidForMonth: new Date().getMonth()+1,
+        });
+    });
 });

@@ -66,7 +66,10 @@ database.child('customers/orders/').once('value', function (snapshot) {
         $('#example tbody').append(myElement);
         $('.extra_title span.item-counts').html(' ('+itemCount+')');
     });
-    $('#example').DataTable();
+    oTable = $('#example').DataTable();
+    $('.search-data').keyup(function(){
+          oTable.search($(this).val()).draw() ;
+    })
 });
 
 $(document).on('click','tr.tr td .view',function(){

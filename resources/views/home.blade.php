@@ -46,9 +46,6 @@
                                         <li class="nav-item">
                                             <a class="nav-link" data-animate="footer" href="#">Contact Us</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{ URL::to('/login') }}">Login</a>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>

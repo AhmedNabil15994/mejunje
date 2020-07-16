@@ -26,7 +26,10 @@ database.child('customers/profiles/').once('value', function (snapshot) {
             $('.extra_title span.item-counts').html(' ('+itemCount+')');
         }
     });
-    $('#example').DataTable();
+    oTable = $('#example').DataTable();
+    $('.search-data').keyup(function(){
+          oTable.search($(this).val()).draw() ;
+    })
 });
 
 function getCustInfo(custUID){

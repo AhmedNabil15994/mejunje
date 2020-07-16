@@ -244,13 +244,33 @@
     }
     .my-orders .col-md-4,
     .my-menu .col-md-4,
-    .my-delivery .col-md-4{
+    .my-delivery .col-md-4,
+    .my-rates .col-md-4{
         margin-bottom: 15px;
+    }
+    .my-rates .cust-order .order-details{
+        height: 100% !important;
+    }
+    .my-rates .cust-order .row.last{
+        bottom: 0 !important;
     }
     .my-orders,
     .my-menu,
-    .my-delivery{
+    .my-delivery,
+    .my-rates{
         width: 100%;
+    }
+    .my-rates .cust-order{
+        height: 70px !important;
+    }
+    .my-rates .cust-order img{
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     #data{
         margin-top: -300px;

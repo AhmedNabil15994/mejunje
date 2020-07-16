@@ -68,20 +68,25 @@ database.child('customers/orders/'+order_id).on('value', function (snapshot) {
     $('.customer-data .cust-address i').after(custObj.location.address);
     $('.customer-data .id i').after(custObj.uid);
     $('.customer-data img').attr('src',custObj.photoURL);
+    $.each(orderObj.rates,function(index,item){
+        console.log(item);
+        $('.customer-data .cust-rate i').after(item.rate);
+        $('.customer-data .cust-review i').after(item.review);
+    });
 
     if(driverObj == null){
 		$('.tests.driver').hide();    	
+    }else{
+        $('.driver-data h5').html(driverObj.displayName);
+        $('.driver-data img').attr('src',driverObj.photo);
+        $('.driver-data .descr').html(driverObj.description);
+        $('.driver-data .email i').after(driverObj.email);
+        $('.driver-data .id i').after(driverObj.uid);
+        $('.driver-data .phone i').after(driverObj.phone);
+        $('.driver-data .paypal i').after(driverObj.paypal);
+        $('.driver-data .find-p label').html('Active');
+        $('.driver-data .licen').html('License: '+driverObj.driverLicense);
     }
-
-    $('.driver-data h5').html(driverObj.displayName);
-    $('.driver-data img').attr('src',driverObj.photo);
-    $('.driver-data .descr').html(driverObj.description);
-    $('.driver-data .email i').after(driverObj.email);
-    $('.driver-data .id i').after(driverObj.uid);
-    $('.driver-data .phone i').after(driverObj.phone);
-    $('.driver-data .paypal i').after(driverObj.paypal);
-    $('.driver-data .find-p label').html('Active');
-    $('.driver-data .licen').html('License: '+driverObj.driverLicense);
 });
 
 function getRestRate(restUID){

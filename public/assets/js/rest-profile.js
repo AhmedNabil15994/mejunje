@@ -205,6 +205,24 @@ database.child('restaurants/profile/'+restUID).on('value', function (snapshot) {
 		$('.chart-data .row.more-info.my-times').append(myString);
 	});
 
+    $.each(restObj.rates,function(index,item){
+        var userRates = '<div class="col-md-3">'+
+                    '<div class="cust-order">'+
+                        '<div class="col-md-4 col-xs-12">'+
+                            '<img src="'+item.customer.photoURL+'">'+
+                        '</div>'+
+                        '<div class="col-md-8 col-xs-12 order-details">'+
+                            '<h5>'+ item.customer.displayName +'</h5>'+
+                            '<p class="desc dish-desc">'+item.review+'</p>'+
+                            '<div class="row last">'+
+                                '<div class="col-xs-12 text-left"><p class="stars"> <i class="fa fa-star"></i> '+item.rate+'</p></div>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>';
+                console.log(item);
+        $('.chart-menu .my-rates').append(userRates);
+    });
 
 });
 

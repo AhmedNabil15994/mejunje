@@ -41,6 +41,12 @@
                 <i class="fa fa-chevron-right"></i>
                 <div class="clearfix"></div>
             </div>
+            <div class="li-wrapper">
+                <span class="pull-left"><i class="fas fa-sign-out-alt"></i></span>
+                <a href="#" class="pull-left logout">Logout</a>
+                <i class="fa fa-chevron-right"></i>
+                <div class="clearfix"></div>
+            </div>
             <div class="clearfix"></div>
         </div>
     </div>

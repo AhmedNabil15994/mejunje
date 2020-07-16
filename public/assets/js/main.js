@@ -192,6 +192,7 @@ $(function(){
 	// dailySales($('#myChart2'));
 
     // $('#example').DataTable();
+
 	$('.datepicker').datetimepicker({
         format: 'DD/MM/YYYY',
     });
@@ -271,6 +272,13 @@ $(function(){
             $('#features .container .first-col').remove();
             $('#features .container').append(myString);
         }
+    });
+
+    $('.logout').on('click',function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        removeCookie('login_auth');
+        window.location.href="/login";
     });
 
 });

@@ -224,6 +224,8 @@
                                 <p class="date dish-desc id"><i class="fa fa-fingerprint"></i></p>
                                 <p class="date dish-desc cust-email"><i class="fa fa-envelope"></i></p>
                                 <p class="date dish-desc cust-address"><i class="fa fa-map-marker-alt"></i></p>
+                                <p class="date dish-desc cust-review"><i class="fa fa-eye"></i></p>
+                                <p class="date dish-desc cust-rate"><i class="fa fa-star"></i></p>
                             </div>
                         </div>
                     </div>
