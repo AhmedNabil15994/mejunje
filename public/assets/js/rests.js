@@ -35,7 +35,9 @@ database.child('restaurants/profile/').once('value', function (snapshot) {
         $('#example tbody').append(myElement);
         $('.extra_title span.item-counts').html(' ('+itemCount+')');
     });
-    oTable = $('#example').DataTable();
+    oTable = $('#example').DataTable({
+        'pageLength': 10,
+    });
     $('.search-data').keyup(function(){
           oTable.search($(this).val()).draw() ;
     })
