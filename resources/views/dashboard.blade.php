@@ -19,7 +19,7 @@
                     </div>
                 </div>        
                 <div class="col-md-2">
-                    <div class="actions">
+                    <div class="actions first-menu">
                         <div class="dropdown">
                           <button class="btn dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-ellipsis-h"></i>
@@ -47,7 +47,7 @@
                     </div>
                 </div>        
                 <div class="col-md-2">
-                    <div class="actions">
+                    <div class="actions second-menu">
                         <div class="dropdown">
                           <button class="btn dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-ellipsis-h"></i>

@@ -126,18 +126,19 @@ function compare( a, b ) {
 }
 
 
-function getRevenue(){
+function getRevenueToday(){
     var rests = [];
     var data = [];
+    var today = moment().format('DD/MM/YYYY');
     database.child('customers/orders/').on('value', function (snapshot) {
         snapshot.forEach(function(orderSnapshot) {
             var orderObj = orderSnapshot.val();
+            var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
             var myOrderObj = {
                 'label': orderObj.restaurant.name,
                 'value': 0,
             };
-            orderObj.count = 0;
-            if(orderObj.status == 'Completed'){
+            if(orderDate == today && orderObj.status == 'Completed'){
                 if ($.inArray(orderObj.restaurant.uid, $.map(rests, function(v) { return v[0]; })) > -1) {
                     for (var i = 0; i < rests.length; i++) {
                         if(rests[i][0] == orderObj.restaurant.uid){
@@ -157,13 +158,91 @@ function getRevenue(){
         data.sort( compare );
         data = data.slice(0, 4);
         revenueChange(data);
+        if(data.length == 0){
+            revenueChange([{'label':'No Sales Today Till now',value:'0'}]);
+        }
     });
 }
 
-getRevenue();
+function getRevenueMonth(){
+    var rests = [];
+    var data = [];
+    var currentMonth = moment().format('MM');
+    database.child('customers/orders/').on('value', function (snapshot) {
+        snapshot.forEach(function(orderSnapshot) {
+            var orderObj = orderSnapshot.val();
+            var myOrderObj = {
+                'label': orderObj.restaurant.name,
+                'value': 0,
+            };
+            if(orderObj.dateComponents.month == currentMonth && orderObj.status == 'Completed'){
+                if ($.inArray(orderObj.restaurant.uid, $.map(rests, function(v) { return v[0]; })) > -1) {
+                    for (var i = 0; i < rests.length; i++) {
+                        if(rests[i][0] == orderObj.restaurant.uid){
+                            var myObj = rests[i][1];
+                            myObj.value += orderObj.totalPrice; 
+                        }
+                    }
+                }else{
+                    myOrderObj.value = orderObj.totalPrice;
+                    rests.push([orderObj.restaurant.uid,myOrderObj]);
+                }
+            }
+        });
+        for (var i = 0; i < rests.length; i++) {
+            data.push(rests[i][1]);
+        }
+        data.sort( compare );
+        data = data.slice(0, 4);
+        revenueChange(data);
+        if(data.length == 0){
+            revenueChange([{'label':'',value:'0'}]);
+        }
+    });
+}
+
+function getRevenueYear(){
+    var rests = [];
+    var data = [];
+    var currentYear = moment().format('YYYY');
+    database.child('customers/orders/').on('value', function (snapshot) {
+        snapshot.forEach(function(orderSnapshot) {
+            var orderObj = orderSnapshot.val();
+            var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
+            var myOrderObj = {
+                'label': orderObj.restaurant.name,
+                'value': 0,
+            };
+            if(orderObj.dateComponents.year == currentYear && orderObj.status == 'Completed'){
+                if ($.inArray(orderObj.restaurant.uid, $.map(rests, function(v) { return v[0]; })) > -1) {
+                    for (var i = 0; i < rests.length; i++) {
+                        if(rests[i][0] == orderObj.restaurant.uid){
+                            var myObj = rests[i][1];
+                            myObj.value += orderObj.totalPrice; 
+                        }
+                    }
+                }else{
+                    myOrderObj.value = orderObj.totalPrice;
+                    rests.push([orderObj.restaurant.uid,myOrderObj]);
+                }
+            }
+        });
+        for (var i = 0; i < rests.length; i++) {
+            data.push(rests[i][1]);
+        }
+        data.sort( compare );
+        data = data.slice(0, 4);
+        revenueChange(data);
+        if(data.length == 0){
+            revenueChange([{'label':'',value:'0'}]);
+        }
+    });
+}
+
+getRevenueToday();
 getIncomeByWeek();
 
-$('.actions a.dropdown-item').on('click',function(e){
+$('.second-menu.actions a.dropdown-item').on('click',function(e){
     e.preventDefault();
     e.stopPropagation();
     if($(this).is(":first-of-type")){
@@ -175,3 +254,17 @@ $('.actions a.dropdown-item').on('click',function(e){
     }
 });
 
+$('.first-menu.actions a.dropdown-item').on('click',function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    if($(this).is(":first-of-type")){
+        $('#kt_chart_revenue_change').empty();
+        getRevenueToday();
+    }else if($(this).is(":nth-of-type(2)")){
+        $('#kt_chart_revenue_change').empty();
+        getRevenueMonth();
+    }else{
+        $('#kt_chart_revenue_change').empty();
+        getRevenueYear();
+    }
+});
