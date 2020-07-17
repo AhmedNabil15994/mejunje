@@ -14,7 +14,7 @@
 <script type="text/javascript">
     var keyValue = document.cookie.match('(^|;) ?login_auth=([^;]*)(;|$)');
     var valValue = keyValue ? keyValue[2] : null;
-	if(valValue != 1){
+	if(valValue != 1 && window.location.href.split("/").pop() != '/'){
         window.location.href='/login';
     }
 </script>
