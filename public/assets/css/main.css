@@ -1467,32 +1467,43 @@
     .home div.details .container img{
         min-height: 600px;
         margin-top: -100px;
-        box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);
+        /*box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);*/
+    }
+    .details .col-md-8 img{
+        margin-top: -150px;
     }
     .features{
         margin-bottom: 50px;
     }
+    #features,
+    #features2{
+        margin-top: 100px;
+    }
     .blog{
         margin-top: 150px;
     }
-    .features .container .first-col{
+    .features .first-col{
         padding-left: 0;
+        margin-top: -100px;
     }
-    .features .container .first-col img{
-        max-height: 500px;
-        box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);
+    .features .first-col img{
+        min-height: 500px;
+        /*box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.05);*/
     }
-    .features .container .last-col{
+    .features .last-col{
         text-align: left;
     }
-    .features .container .last-col h1{
+    .features .last-col h1{
         font-weight: bold;
         color: #000;
     }
-    .features .container .last-col p{
+    .features .last-col p{
         color: #777;
         font-size: 18px;
         font-weight: bold;
+    }
+    #blog .first-col{
+        margin-top: -100px;
     }
     .icon-holder{
         width: 50px;

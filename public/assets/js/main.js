@@ -268,9 +268,12 @@ $(function(){
 
     $(window).on('load',function(){
         if($(window).width() <= 991){
-            var myString = $('#features .container .first-col').clone();
-            $('#features .container .first-col').remove();
-            $('#features .container').append(myString);
+            var myString = $('#features .first-col').clone();
+            var myString2 = $('#blog .first-col').clone();
+            $('#features .first-col').remove();
+            $('#blog .first-col').remove();
+            $('#features').append(myString);
+            $('#blog').append(myString2);
         }
     });
 

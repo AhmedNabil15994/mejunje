@@ -52,26 +52,28 @@
                         </div>      
                     </nav>
                     <div class="details" id="details">
-                        <div class="container">
-                            <div class="col-md-6">
+                        {{-- <div class="container"> --}}
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3">
                                 <h1>Awesome App For Your Modern Lifestyle</h1>
                                 <p>increase Productivity with a simple to-do app.app for managing your personal budgets</p>
                                 <button>Download App</button>
                                 <button>Discover More</button>
                             </div>
-                            <div class="col-md-6">
-                                <img src="{{ URL::to('/assets/images/mobile.jpeg') }}" alt="">
+                            <div class="col-md-8">
+                                <img src="{{ URL::to('/assets/images/customer-1.png') }}" alt="">
                             </div>
-                        </div>
+                        {{-- </div> --}}
                     </div>
                 </div>
+                <div class="clearfix"></div>
                 <div class="container-fluid home2">
                     <div class="features text-center" id="features">
-                        <div class="container">
+                        {{-- <div class="container"> --}}
                             <div class="col-md-5 first-col">
-                                <img src="{{ URL::to('/assets/images/mobile2.jpeg') }}" alt="">
+                                <img src="{{ URL::to('/assets/images/rest-7.png') }}" alt="">
                             </div>
-                            <div class="col-md-7 last-col">
+                            <div class="col-md-6 last-col">
                                 <h1>Our Cool Features</h1>
                                 <p class="main-p">increase Productivity with a simple to-do app.app for managing your personal budgets</p>
                                 <div class="row">
@@ -115,45 +117,93 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-md-1"></div>
+                        {{-- </div> --}}
                     </div>
-                    <div class="features blog text-center" id="blog">
-                        <div class="container">
-                            <div class="col-md-7 last-col">
-                                <h1>Easy To Search Your Items by This App</h1>
-                                <p class="main-p">
-                                    increase Productivity with a simple to-do app.app for managing your personal budgets
-                                    increase Productivity with a simple to-do app.app for managing your personal budgets
-                                    increase Productivity with a simple to-do app.app for managing your personal budgets
-                                    increase Productivity with a simple to-do app.app for managing your personal budgets
-                                    increase Productivity with a simple to-do app.app for managing your personal budgets.
-                                </p>
-                                <div class="row download">
-                                    <button> 
-                                        <i class="fab fa-google-play"></i>  
-                                        <div class="button-data">
-                                            <b>Get it on</b> <span>Play Store</span>
+                    <div class="clearfix"></div>
+                    <div class="features text-center" id="features2">
+                        {{-- <div class="container"> --}}
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5 last-col">
+                                <h1>Our Cool Features</h1>
+                                <p class="main-p">increase Productivity with a simple to-do app.app for managing your personal budgets</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-air-freshener"></i>
                                         </div>
-                                    </button>
-                                    <button> 
-                                        <i class="fab fa-app-store"></i> 
-                                        <div class="button-data">
-                                            <b>Get it on</b> <span>App Store</span>
-                                        </div> 
-                                    </button>
-                                    <button> 
-                                        <i class="fab fa-microsoft"></i> 
-                                        <div class="button-data">
-                                            <b>Get it on</b> <span>Microsoft</span>
+                                        <div class="icon-data">
+                                            <h3>Ai Intelligence</h3>
+                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
                                         </div>
-                                    </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-mobile"></i>
+                                        </div>
+                                        <div class="icon-data">
+                                            <h3>Application Development</h3>
+                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-newspaper"></i>
+                                        </div>
+                                        <div class="icon-data">
+                                            <h3>UI UX Design</h3>
+                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-code"></i>
+                                        </div>
+                                        <div class="icon-data">
+                                            <h3>Web Development</h3>
+                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-5 first-col">
-                                <img src="{{ URL::to('/assets/images/mobile2.jpeg') }}" alt="">
+                            <div class="col-md-6 first-col">
+                                <img src="{{ URL::to('/assets/images/customer-8.png') }}" alt="">
+                            </div>
+                        {{-- </div> --}}
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="features blog text-center" id="blog">
+                        <div class="col-md-6 first-col">
+                            <img src="{{ URL::to('/assets/images/customer-2.png') }}" alt="">
+                        </div>
+                        <div class="col-md-5 last-col">
+                            <h1>Easy To Search Your Items by This App</h1>
+                            <p class="main-p">
+                                increase Productivity with a simple to-do app.app for managing your personal budgets
+                                increase Productivity with a simple to-do app.app for managing your personal budgets
+                                increase Productivity with a simple to-do app.app for managing your personal budgets
+                                increase Productivity with a simple to-do app.app for managing your personal budgets
+                                increase Productivity with a simple to-do app.app for managing your personal budgets.
+                            </p>
+                            <div class="row download">
+                                <button> 
+                                    <i class="fab fa-google-play"></i>  
+                                    <div class="button-data">
+                                        <b>Get it on</b> <span>Play Store</span>
+                                    </div>
+                                </button>
+                                <button> 
+                                    <i class="fab fa-app-store"></i> 
+                                    <div class="button-data">
+                                        <b>Get it on</b> <span>App Store</span>
+                                    </div> 
+                                </button>
                             </div>
                         </div>
                     </div>
+                    <div class="clearfix"></div>
                     <footer id="footer">
                         <div class="container">
                             <div class="row">

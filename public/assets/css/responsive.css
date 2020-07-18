@@ -275,21 +275,26 @@
 	.home div.details{
 		top: 150px;
 	}
+	.home div.details img{display: none;}
 	.home div.details button,
 	.download button{
 		margin-bottom: 15px;
 	}
-	.home div.details .container .col-md-6:last-of-type{
+	.home div.details .col-md-6:last-of-type{
 		display: none;
 	}
 	.features{
 		margin-top: 25px;
 	}
-	.features .container .first-col{
+	.features .first-col{
 		float: right;
+		margin-top: 0;
 	}
-	.features .container .last-col{
+	.features .last-col{
 		float: left;
+	}
+	#blog .first-col {
+		margin-top: 0;
 	}
 	.row.download,
 	footer .container .row{
@@ -549,18 +554,37 @@
 	.home div.details{
 		top: 150px;
 	}
-	.home div.details .container .col-md-6{
+	.home div.details .col-md-1{
+		width: 0;
+		display: none;
+	}
+	.home div.details .col-md-3{
+		max-width: 33.333333% !important;
+		flex: 0 0 33.333333% !important;
+	}
+	.home div.details .col-md-3,
+	.home div.details .col-md-8{
 		float: left;
 	}
-	.home div.details .container img{
+	.home .background2{
+		transform: rotateZ(-8deg);
+	}
+	.home div.details img{
 		min-height: unset;
 		margin-top: 0;
 	}
 	.home div.details button{
 		padding: 10px;
+		display: block;
+		margin: auto;
+   	 	margin-bottom: 10px;
+    	padding: 10px 20px
 	}
-	.features .container .last-col,
-	.features .container .first-col{
+	#features, #features2{
+		margin-top: 0;
+	}
+	.features .last-col,
+	.features .first-col{
 		max-width: 100%;
 		text-align: center;
 		margin-bottom: 25px;
@@ -571,6 +595,10 @@
 	}
 	.blog{
 		margin-top: 50px;
+	}
+	#blog .first-col,
+	.features .first-col{
+		margin-top: 0;
 	}
 	footer .last-row .col-sm-6.text-right{
 		padding: 0;
@@ -648,5 +676,39 @@
 	}
 	.cust-profile .col-xs-12.pd-l-0 .col-xs-6{
 		padding: 0;
+	}
+
+	.home div.details .col-md-1{
+		width: 0;
+		display: none;
+	}
+	.home div.details .col-md-3{
+		max-width: 33.333333% !important;
+		flex: 0 0 33.333333% !important;
+	}
+	.home div.details .col-md-3,
+	.home div.details .col-md-8{
+		float: left;
+	}
+	.home .background2{
+		transform: rotateZ(-15deg);
+	}
+	.home div.details img{
+		min-height: unset;
+		margin-top: 0;
+	}
+	.home div.details button{
+		margin-right: 0;
+	}
+	.home div.details button:first-of-type{
+		margin-left: 30px;
+		margin-right: 10px;
+	}
+	.home div.details .col-md-8{
+		margin-top: -150px;
+	}
+	.features{
+		margin-bottom: 50px;
+		min-height: 500px;
 	}
 }
