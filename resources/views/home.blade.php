@@ -55,8 +55,11 @@
                         {{-- <div class="container"> --}}
                             <div class="col-md-1"></div>
                             <div class="col-md-3">
-                                <h1>Awesome App For Your Modern Lifestyle</h1>
-                                <p>increase Productivity with a simple to-do app.app for managing your personal budgets</p>
+                                <h1>
+                                    Mejunje Food Delivery App <br>
+                                    ¡Pide lo que quieras desde tu móvil!
+                                </h1>
+                                <p>¿Quieres comerte algo rico y no quieres salir? Descarga nuestra app y ordena tu comida favorita de donde quieras.</p>
                                 <button>Download App</button>
                                 <button>Discover More</button>
                             </div>
@@ -74,16 +77,16 @@
                                 <img src="{{ URL::to('/assets/images/rest-7.png') }}" alt="">
                             </div>
                             <div class="col-md-6 last-col">
-                                <h1>Our Cool Features</h1>
-                                <p class="main-p">increase Productivity with a simple to-do app.app for managing your personal budgets</p>
+                                <h1>Esto es "Mejunje"</h1>
+                                <p class="main-p"> Escoge lo que quieras de tu rest (o) food truck favorito.</p>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="icon-holder">
                                             <i class="fa fa-air-freshener"></i>
                                         </div>
                                         <div class="icon-data">
-                                            <h3>Ai Intelligence</h3>
-                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                            <h3>Tengo ganas de...'</h3>
+                                            <p>Tranquilo, tranquila, lo tenemos desde un rico mofongo de churrasco, hasta unos taquitos mexicanos picantes, o mejor aún, unas calientitas alcapurrias de jueyes . mmmmm!</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -91,8 +94,8 @@
                                             <i class="fa fa-mobile"></i>
                                         </div>
                                         <div class="icon-data">
-                                            <h3>Application Development</h3>
-                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                            <h3>¿Pa' aqui o pa' llevar? ¡Quiero delivery!</h3>
+                                            <p> No tienes que salir de tu casa o de tu trabajo,pide que te lo llevemos, y mientras esperas, rastrea tu orden en todo momento desde el app.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -102,8 +105,8 @@
                                             <i class="fa fa-newspaper"></i>
                                         </div>
                                         <div class="icon-data">
-                                            <h3>UI UX Design</h3>
-                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                            <h3>Quiero de mi sitio favorito</h3>
+                                            <p>Con una plataforma fácil de usar y de buscar, encuentra aquítu sitio favorito.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -111,8 +114,8 @@
                                             <i class="fa fa-code"></i>
                                         </div>
                                         <div class="icon-data">
-                                            <h3>Web Development</h3>
-                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                            <h3>Pide ahora y recíbelo luego</h3>
+                                            <p>Relax…! Puedes programar la hora de entrega sin tenerque esperar a último momento.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -125,16 +128,16 @@
                         {{-- <div class="container"> --}}
                             <div class="col-md-1"></div>
                             <div class="col-md-5 last-col">
-                                <h1>Our Cool Features</h1>
-                                <p class="main-p">increase Productivity with a simple to-do app.app for managing your personal budgets</p>
+                                <h1>¿Tienes un negocio de comida y quieres estar en el app?</h1>
+                                <p class="main-p">Expande tu negocio llevándolo al siguiente nivel.</p>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="icon-holder">
                                             <i class="fa fa-air-freshener"></i>
                                         </div>
                                         <div class="icon-data">
-                                            <h3>Ai Intelligence</h3>
-                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                            <h3>Alcance</h3>
+                                            <p>Esta es la oportunidad para que tus platos estén al frente de más personas, en donde con "un par de clicks" podrán pedir su plato favorito de tu negocio.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -142,8 +145,8 @@
                                             <i class="fa fa-mobile"></i>
                                         </div>
                                         <div class="icon-data">
-                                            <h3>Application Development</h3>
-                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                            <h3>Punto de venta</h3>
+                                            <p>Una plataforma de reporte para ver tus números.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -153,8 +156,8 @@
                                             <i class="fa fa-newspaper"></i>
                                         </div>
                                         <div class="icon-data">
-                                            <h3>UI UX Design</h3>
-                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                            <h3>Delivery</h3>
+                                            <p>Perfiles con las herramientas completas para tus empleados.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -162,8 +165,8 @@
                                             <i class="fa fa-code"></i>
                                         </div>
                                         <div class="icon-data">
-                                            <h3>Web Development</h3>
-                                            <p>It is a long established fact that a reader will be distracted by looking at its layout.</p>
+                                            <h3>Únete</h3>
+                                            <p>- Envíanos un email a info@mejunjeapp.com y se parte de la revolución gastronómica.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -179,13 +182,9 @@
                             <img src="{{ URL::to('/assets/images/customer-2.png') }}" alt="">
                         </div>
                         <div class="col-md-5 last-col">
-                            <h1>Easy To Search Your Items by This App</h1>
+                            <h1>¡Descarga el app y pide que hay!</h1>
                             <p class="main-p">
-                                increase Productivity with a simple to-do app.app for managing your personal budgets
-                                increase Productivity with a simple to-do app.app for managing your personal budgets
-                                increase Productivity with a simple to-do app.app for managing your personal budgets
-                                increase Productivity with a simple to-do app.app for managing your personal budgets
-                                increase Productivity with a simple to-do app.app for managing your personal budgets.
+                                Descarga el app desde tu Android o iPhone, disponible ya en Play Store y App Store, vive la experiencia.
                             </p>
                             <div class="row download">
                                 <button> 
@@ -211,7 +210,7 @@
                                     <img src="{{ URL::to('/assets/images/logo.jpeg') }}" alt="">
                                     <p class="first">Mejunje</p>
                                     <p class="last-one">
-                                        increase Productivity with a simple to-do app.app for managing your personal budgets increase Productivity with a simple to-do app.app for managing your personal budgets increase Productivity with a simple to-do app.app for managing your personal budgets increase Productivity with a simple to-do app.app for managing your personal budgets increase Productivity with a simple to-do app.app for managing your personal budgets.
+                                       Descarga el app desde tu Android o iPhone, disponible ya en Play Store y App Store, vive la experiencia.
                                     </p>
                                 </div>    
                                 <div class="col-md-2">
@@ -230,9 +229,9 @@
                                 </div>    
                                 <div class="col-md-3">
                                     <p class="first head">Contact Us</p>
-                                    <p class="last-one"><i class="fa fa-map-marker-alt"></i> 01 Overille Road Apt.786,California USA</p>
-                                    <p class="last-one"><i class="fa fa-envelope"></i> admin@mejunje.com</p>
-                                    <p class="last-one"><i class="fa fa-phone"></i> +123123123</p>
+                                    <p class="last-one"><i class="fa fa-map-marker-alt"></i> Po Box 380, Hatillo, PR 00659</p>
+                                    <p class="last-one"><i class="fa fa-envelope"></i> info@mejunjeapp.com</p>
+                                    <p class="last-one"><i class="fa fa-phone"></i> (863) 485-4050</p>
                                 </div>    
                             </div>
                             <div class="row last-row">
