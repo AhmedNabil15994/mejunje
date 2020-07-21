@@ -23,7 +23,7 @@
                     <nav class="navbar fixed-top navbar-expand-lg">
                         <div class="container">
                             <div class="col-md-6">
-                                <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::to('/assets/images/logo.jpeg')}}" alt=""></a>
+                                <a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::to('/assets/images/logo.jpeg')}}" alt=""> Mejunje</a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-togglers"></span>
                                     <span class="navbar-togglers"></span>
@@ -60,8 +60,6 @@
                                     ¡Pide lo que quieras desde tu móvil!
                                 </h1>
                                 <p>¿Quieres comerte algo rico y no quieres salir? Descarga nuestra app y ordena tu comida favorita de donde quieras.</p>
-                                <button>Download App</button>
-                                <button>Discover More</button>
                             </div>
                             <div class="col-md-8">
                                 <img src="{{ URL::to('/assets/images/customer-1.png') }}" alt="">
@@ -75,6 +73,20 @@
                         {{-- <div class="container"> --}}
                             <div class="col-md-5 first-col">
                                 <img src="{{ URL::to('/assets/images/rest-7.png') }}" alt="">
+                                <div class="row download">
+                                    <button> 
+                                        <i class="fab fa-google-play"></i>  
+                                        <div class="button-data">
+                                            <b>Get it on</b> <span>Play Store</span>
+                                        </div>
+                                    </button>
+                                    <button> 
+                                        <i class="fab fa-app-store"></i> 
+                                        <div class="button-data">
+                                            <b>Get it on</b> <span>App Store</span>
+                                        </div> 
+                                    </button>
+                                </div>
                             </div>
                             <div class="col-md-6 last-col">
                                 <h1>Esto es "Mejunje"</h1>
@@ -82,7 +94,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="icon-holder">
-                                            <i class="fa fa-air-freshener"></i>
+                                            <i class="fa fa-hamburger"></i>
                                         </div>
                                         <div class="icon-data">
                                             <h3>Tengo ganas de...'</h3>
@@ -91,7 +103,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="icon-holder">
-                                            <i class="fa fa-mobile"></i>
+                                            <i class="fa fa-truck"></i>
                                         </div>
                                         <div class="icon-data">
                                             <h3>¿Pa' aqui o pa' llevar? ¡Quiero delivery!</h3>
@@ -102,7 +114,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="icon-holder">
-                                            <i class="fa fa-newspaper"></i>
+                                            <i class="fa fa-star"></i>
                                         </div>
                                         <div class="icon-data">
                                             <h3>Quiero de mi sitio favorito</h3>
@@ -111,7 +123,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="icon-holder">
-                                            <i class="fa fa-code"></i>
+                                            <i class="fa fa-shopping-cart"></i>
                                         </div>
                                         <div class="icon-data">
                                             <h3>Pide ahora y recíbelo luego</h3>
@@ -133,7 +145,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="icon-holder">
-                                            <i class="fa fa-air-freshener"></i>
+                                            <i class="fa  fa-crosshairs"></i>
                                         </div>
                                         <div class="icon-data">
                                             <h3>Alcance</h3>
@@ -142,7 +154,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="icon-holder">
-                                            <i class="fa fa-mobile"></i>
+                                            <i class="fa fa-shopping-cart"></i>
                                         </div>
                                         <div class="icon-data">
                                             <h3>Punto de venta</h3>
@@ -153,7 +165,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="icon-holder">
-                                            <i class="fa fa-newspaper"></i>
+                                            <i class="fa fa-truck"></i>
                                         </div>
                                         <div class="icon-data">
                                             <h3>Delivery</h3>
@@ -162,7 +174,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="icon-holder">
-                                            <i class="fa fa-code"></i>
+                                            <i class="fa fa-handshake"></i>
                                         </div>
                                         <div class="icon-data">
                                             <h3>Únete</h3>
@@ -173,6 +185,20 @@
                             </div>
                             <div class="col-md-6 first-col">
                                 <img src="{{ URL::to('/assets/images/customer-8.png') }}" alt="">
+                                <div class="row download">
+                                    <button> 
+                                        <i class="fab fa-google-play"></i>  
+                                        <div class="button-data">
+                                            <b>Get it on</b> <span>Play Store</span>
+                                        </div>
+                                    </button>
+                                    <button> 
+                                        <i class="fab fa-app-store"></i> 
+                                        <div class="button-data">
+                                            <b>Get it on</b> <span>App Store</span>
+                                        </div> 
+                                    </button>
+                                </div>
                             </div>
                         {{-- </div> --}}
                     </div>
@@ -213,21 +239,14 @@
                                        Descarga el app desde tu Android o iPhone, disponible ya en Play Store y App Store, vive la experiencia.
                                     </p>
                                 </div>    
-                                <div class="col-md-2">
-                                    <p class="first head">Support</p>
-                                    <p class="last-one"><a href="#">FAQ</a></p>
-                                    <p class="last-one"><a href="#">Contact us</a></p>
-                                    <p class="last-one"><a href="#">Term Service</a></p>
-                                    <p class="last-one"><a href="#">Live Chat</a></p>
-                                </div>    
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <p class="first head">Download</p>
                                     <p class="last-one"><a href="#">Android (Google Play)</a></p>
                                     <p class="last-one"><a href="#">Apple (App Store)</a></p>
                                     <p class="last-one"><a href="#">Microsoft (Microsoft Store)</a></p>
                                     <p class="last-one"><a href="#">ChromeOS (Coming Soon)</a></p>
                                 </div>    
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <p class="first head">Contact Us</p>
                                     <p class="last-one"><i class="fa fa-map-marker-alt"></i> Po Box 380, Hatillo, PR 00659</p>
                                     <p class="last-one"><i class="fa fa-envelope"></i> info@mejunjeapp.com</p>
@@ -237,7 +256,7 @@
                             <div class="row last-row">
                                 <div class="col-xs-12">
                                     <div class="col-md-9 col-xs-12 col-sm-6">
-                                        <p class="designed"> &copy; {{ date('Y') }} Copyright all right reserved by Ahmed Nabil. </p>
+                                        <p class="designed"> &copy; {{ date('Y') }} Copyright all right reserved by <a href="https://www.facebook.com/Dev.MoDy.Nabil" title="">Ahmed Nabil</a>. </p>
                                     </div>
                                     <div class="col-md-3 col-xs-12 col-sm-6 text-right">
                                         <div class="footer-icon"><i class="fab fa-facebook"></i></div>
