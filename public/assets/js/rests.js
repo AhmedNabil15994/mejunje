@@ -99,7 +99,8 @@ $(document).on('click','.btn-warning.paid',function(e){
     e.stopPropagation();
     var restUID = $(this).data('area');
     var today = moment().format('DD/MM/YYYY');
-
+    var elemParent = $(this).parent('td');
+    var myElem = $(this);
     database.child('customers/orders/').on('value', function (snapshot2) {
         var total = 0;
         snapshot2.forEach(function(orderSnapshot) {
@@ -111,17 +112,18 @@ $(document).on('click','.btn-warning.paid',function(e){
                 }
             }
         });
-        database.child('restaurants/profile/'+restUID+'/paids').push({
+        var myQuery = database.child('restaurants/profile/'+restUID+'/paids').push({
             date: today.toString(),
             total: total.toString(),
             paid: true,
             paidForMonth: new Date().getMonth()+1,
             paidForYear: moment().format('YYYY'),
         });
+        var myKey = myQuery.getKey();
+        myElem.remove();
+        var paidButton = '<button class="btn-xs btn-info remove-pay" data-area="'+restUID+'" data-area2="'+myKey+'"> Paid</button>';
+        elemParent.append(paidButton);
     });
-    var elemParent = $(this).parent('td');
-    $(this).remove();
-    elemParent.append('<button class="btn-xs btn-info"> Paid</button>');
 });
 
 $(document).on('click','.remove-pay',function(e){
