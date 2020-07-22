@@ -5,12 +5,20 @@ database.child('restaurants/profile/').once('value', function (snapshot) {
         $('#example tbody tr.odd').empty();
         var restaurantObj = userSnapshot.val();
         var restUID = restaurantObj.uid;
-
+        var currentMonth = new Date().getMonth()+1;
         var statusButton = '<button class="btn-xs btn-success" data-area="'+restUID+'"> <i class="fa fa-check"></i></button>';
+        var paidButton = '<button class="btn-xs btn-warning paid" data-area="'+restUID+'"> Pay</button>';
         var statusLabel = '<label class="label label-danger">In Active</label>';
         if(restaurantObj.status == 'active'){
             statusButton = '<button class="btn-xs btn-danger" data-area="'+restUID+'"> <i class="fa fa-times"></i></button>';
             statusLabel = '<label class="label label-success">Active</label>';
+        }
+        if(restaurantObj.paids){
+            $.each(restaurantObj.paids,function(index,item){
+                if(item.paidForMonth == currentMonth){
+                    paidButton = '<button class="btn-xs btn-info"> Paid</button>';
+                }
+            });
         }
         itemCount+=1;
         var myElement = '<tr class="tr" id="'+restUID+'">'+
@@ -29,7 +37,7 @@ database.child('restaurants/profile/').once('value', function (snapshot) {
                             '<td>'+
                                 '<button class="btn btn-xs btn-primary view" data-area="'+restUID+'"><i class="fa fa-eye"></i></button>'+
                                 statusButton+
-                                '<button class="btn-xs btn-warning paid" data-area="'+restUID+'"> Paid</button>'+
+                                paidButton+
                             '</td>'+
                         '</tr>';
         $('#example tbody').append(myElement);
@@ -111,4 +119,7 @@ $(document).on('click','.btn-warning.paid',function(e){
             paidForYear: moment().format('YYYY'),
         });
     });
+    var elemParent = $(this).parent('td');
+    $(this).remove();
+    elemParent.append('<button class="btn-xs btn-info"> Paid</button>');
 });
