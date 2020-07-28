@@ -273,34 +273,25 @@ function getIncomeByWeek(){
 
 }
 
-function getIncomeByMonth(){
-    var data = [0,0,0,0,0,0];
-    var currentMonth = moment().format('MM');
-    var lastPeriod = '26-30';
-    var endOfMonth = moment().endOf('month').format('D');
-    if(currentMonth == 1 || currentMonth == 3 || currentMonth == 5 || currentMonth == 7 || currentMonth == 8 || currentMonth == 10 || currentMonth == 12){
-        lastPeriod = '26-31';
-    }else if (currentMonth == 2) {
-        lastPeriod = '26-'+ endOfMonth;        
-    }
-    var labels = ['1-5','6-10','11-15','16-20','21-25',lastPeriod];
+function getIncomeByYear(){
+    var data = [0,0,0,0,0,0,0,0,0,0,0,0];
+    var currentYear = moment().format('YYYY');
+    var labels = [
+            moment(moment().format('YYYY')).subtract('years', 3).format('YYYY'),
+            moment(moment().format('YYYY')).subtract('years', 2).format('YYYY'),
+            moment(moment().format('YYYY')).subtract('years', 1).format('YYYY'),
+            moment().format('YYYY'),
+            moment(moment().format('YYYY')).add('years', 1).format('YYYY'),
+            moment(moment().format('YYYY')).add('years', 2).format('YYYY'),
+            moment(moment().format('YYYY')).add('years', 3).format('YYYY'),
+
+        ];
     database.child('customers/orders/').on('value', function (snapshot) {
         snapshot.forEach(function(orderSnapshot) {
             var orderObj = orderSnapshot.val();
-            var orderDate = orderObj.dateComponents.day+'/'+orderObj.dateComponents.month+'/'+orderObj.dateComponents.year;
-            if(orderObj.restaurantUid == restUID && orderObj.dateComponents.month == currentMonth && orderObj.status == 'Completed'){
-                if(orderObj.dateComponents.day >= 1 && orderObj.dateComponents.day <= 5 ){
-                    data[0] = data[0] + orderObj.totalPrice; 
-                }else if(orderObj.dateComponents.day >= 6 && orderObj.dateComponents.day <= 10 ){
-                    data[1] = data[1] + orderObj.totalPrice; 
-                }else if(orderObj.dateComponents.day >= 11 && orderObj.dateComponents.day <= 15 ){
-                    data[2] = data[2] + orderObj.totalPrice; 
-                }else if(orderObj.dateComponents.day >= 16 && orderObj.dateComponents.day <= 20 ){
-                    data[3] = data[3] + orderObj.totalPrice; 
-                }else if(orderObj.dateComponents.day >= 21 && orderObj.dateComponents.day <= 25 ){
-                    data[4] = data[4] + orderObj.totalPrice; 
-                }else if(orderObj.dateComponents.day >= 26 && orderObj.dateComponents.day <= endOfMonth ){
-                    data[5] = data[5] + orderObj.totalPrice; 
+            for (var i = 0; i < labels.length; i++) {
+                if(orderObj.restaurantUid == restUID && orderObj.dateComponents.year == labels[i] && orderObj.status == 'Completed'){
+                    data[i] = data[i] + orderObj.totalPrice;
                 }
             }
         });
@@ -308,8 +299,8 @@ function getIncomeByMonth(){
     });
 }
 
-function getIncomeByYear(){
-    var data = [0,0,0,0,0,0,0,0,0,0,0,0];
+function getIncomeByMonth(){
+    var data = [0,0,0,0,0,0,0,0];
     var currentYear = moment().format('YYYY');
     var labels = ['Jan','Feb','MAr','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     database.child('customers/orders/').on('value', function (snapshot) {

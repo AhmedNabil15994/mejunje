@@ -77,6 +77,13 @@ var dailySales = function(elem,labels,data) {
             legend:{
             	display: false,
             },
+            tooltips: {
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        return "$ " + tooltipItem.yLabel;
+                    }
+                }
+            }
 	    },
     });
 }
