@@ -31,7 +31,7 @@
                                         <th>Phone</th>
                                         <th>Email</th>
                                         <th>Bank Account</th>
-                                        <th>Earned This Month</th>
+                                        <th>Earned $</th>
                                         <th># Orders</th>
                                         <th>Created On</th>
                                         <th>Status</th>

@@ -268,7 +268,33 @@ function getIncomeByWeek(){
 
         data = data.reverse(); 
         labels = labels.reverse(); 
-        dailySales($('#myChart'),labels,data);
+        var newData = [];
+        var newLabels = [];
+        for (var i = 0; i < labels.length; i++) {
+            if(labels[i] == 'Mon'){
+                newLabels[0] = labels[i];
+                newData[0] = labels[i];
+            }else if(labels[i] == 'Tue'){
+                newLabels[1] = labels[i];
+                newData[1] = labels[i];
+            }else if(labels[i] == 'Wed'){
+                newLabels[2] = labels[i];
+                newData[2] = labels[i];
+            }else if(labels[i] == 'Thu'){
+                newLabels[3] = labels[i];
+                newData[3] = labels[i];
+            }else if(labels[i] == 'Fri'){
+                newLabels[4] = labels[i];
+                newData[4] = labels[i];
+            }else if(labels[i] == 'Sat'){
+                newLabels[5] = labels[i];
+                newData[5] = labels[i];
+            }else if(labels[i] == 'Sun'){
+                newLabels[6] = labels[i];
+                newData[6] = labels[i];
+            }
+        }
+        dailySales($('#myChart'),newLabels,newData);
     });
 
 }

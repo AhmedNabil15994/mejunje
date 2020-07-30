@@ -603,6 +603,9 @@
 	footer .last-row .col-sm-6.text-right{
 		padding: 0;
 	}
+	.chart-data.cust-profile.rest-prof .row .col-xs-3.text-center{
+		padding: 0;
+	}
 }
 
 @media(min-width: 1200px ) and ( max-width: 1600px){
