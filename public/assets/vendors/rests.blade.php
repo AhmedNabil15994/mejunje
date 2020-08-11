@@ -3,7 +3,6 @@
 @section('name','Ahmed')
 @section('extra_title','Rest List')
 @section('styles')
-<link href="{{ asset('assets/vendors/bootstrap-daterangepicker/daterangepicker.css')}}" rel="stylesheet">
 <style type="text/css" media="screen">
     .rest table tr.tr td button.btn-xs{
         padding: 0;
@@ -14,21 +13,6 @@
     }
     .row.test{
         margin-bottom: 10px !important;
-    }
-    .daterangepicker .input-mini.active {
-        border: 1px solid #ccc;
-    }
-    .daterangepicker .input-mini,
-    .daterangepicker .input-mini:focus{
-        display: block;
-        width: 100% !important;
-        background: unset;
-    }
-    .calendar-table{
-        color: #000 !important;
-    }
-    td.week,th.week{
-        display: none;
     }
 </style>
 @endsection
